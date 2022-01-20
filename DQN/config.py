@@ -3,8 +3,6 @@ import datetime
 import torch
 
 from agent import DQN
-from common.utils import make_dir, save_results
-from common.plot import plot_rewards_cn
 
 curr_time = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
 
