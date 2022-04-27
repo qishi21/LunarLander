@@ -1,4 +1,7 @@
 from config import *
+from common.utils import save_results
+from common.plot import plot_rewards_cn
+
 if __name__ == '__main__':
     agent.load(path=cfg.model_path)
     rewards, ma_rewards = eval(cfg, env, agent)
