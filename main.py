@@ -2,12 +2,13 @@ import logging
 import os
 import gym
 import numpy as np
+import torch
 from torch.utils.tensorboard import SummaryWriter
 from agent import DDPGAgent
 
 TRAIN_CHECKPOINT = False  # 是否进行训练
 LOAD_MODEL_CHECKPOINT = True  # 是否载入模型
-RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
+RENDER_CHECKPOINT = False  # 是否显示动画（仅在评估时有效）
 
 
 # 参数配置
@@ -15,6 +16,8 @@ class DDPGConfig:
     def __init__(self):
         self.algo = 'DDPG'  # 算法名称
         self.env_name = 'LunarLanderContinuous-v2'  # 环境名称
+
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         self.alpha = 1e-4  # actor_network学习率
         self.beta = 1e-3  # critic_network学习率
@@ -26,8 +29,8 @@ class DDPGConfig:
         self.fc1_dim = 400  # 隐藏层1的维度
         self.fc2_dim = 200  # 隐藏层2的维度
 
-        self.train_eps = 500  # 训练的幕数
-        self.eval_eps = 10  # 评估的幕数
+        self.train_eps = 10000  # 训练的幕数
+        self.eval_eps = 1000  # 评估的幕数
 
         # 记录最大的奖励值，便于保存最优的模型
         self.max_reward = 0
@@ -63,7 +66,7 @@ def env_agent_config(cfg):
 # 训练
 def train(cfg, env, agent):
     cfg.logger.info('Start training.')
-    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}')
+    cfg.logger.info(f'env:{cfg.env_name} |algo:{cfg.algo} |device:{cfg.device}')
     history_reward = []
 
     for ep in range(cfg.train_eps):
@@ -80,7 +83,7 @@ def train(cfg, env, agent):
             ep_reward += reward
             state = next_state
 
-        cfg.writer.add_scalar('train/loss', ep_reward, ep)
+        cfg.writer.add_scalar('train/reward', ep_reward, ep)
         cfg.writer.add_scalar('train/steps', steps, ep)
         cfg.logger.info(f'episode:{ep+1:>3}/{cfg.train_eps}|steps:{steps:>4}|ep_reward:{round(ep_reward, 2)}')
         history_reward.append(ep_reward)
@@ -102,7 +105,7 @@ def train(cfg, env, agent):
 # 评估
 def eval(cfg, env, agent):
     cfg.logger.info('Start evaluation.')
-    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}')
+    cfg.logger.info(f'env:{cfg.env_name} |algo:{cfg.algo} |device:{cfg.device}')
 
     history_reward = []
     for ep in range(cfg.eval_eps):
@@ -111,7 +114,6 @@ def eval(cfg, env, agent):
         state = env.reset()
         if RENDER_CHECKPOINT:
             env.render()
-        env.render()
         done = False
         while not done:
             action = agent.predict(state)

@@ -13,18 +13,22 @@ class DDPGAgent:
         self.beta = cfg.beta
         self.gamma = cfg.gamma
 
+        self.device = cfg.device
+
         self.memory = ReplayBuffer(cfg.capacity)  # 经验回放池
         self.noise = OUActionNoise(mu=np.zeros(action_dim))  # OU噪声
 
         # actor_network
-        self.actor = ActorNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
+        self.actor = ActorNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
         self.actor_optimizer = torch.optim.Adam(self.actor.parameters(), lr=cfg.alpha)
-        self.actor_target = ActorNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
+        self.actor_target = ActorNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
 
         # critic_network
-        self.critic = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
+        self.critic = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters(), lr=cfg.beta, weight_decay=0.01)
-        self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
+        self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
+        # print(next(self.actor.parameters()).device)
+        # print(next(self.critic.parameters()).device)
 
         # 软更新
         self.update_network_parameters(tau=1)
@@ -33,20 +37,20 @@ class DDPGAgent:
     def choose_action(self, state):
         self.actor.eval()
 
-        state = torch.tensor(np.array([state]), dtype=torch.float)
-        mu = self.actor(state)
-        mu_prime = mu + torch.tensor(self.noise(), dtype=torch.float)
+        state = torch.tensor(np.array([state]), dtype=torch.float, device=self.device)
+        mu = self.actor(state).to(self.device)
+        mu_prime = mu + torch.tensor(self.noise(), dtype=torch.float, device=self.device)
 
         self.actor.train()
-        return mu_prime.detach().numpy()[0]
+        return mu_prime.cpu().detach().numpy()[0]
 
     # 预测动作，用于评估
     def predict(self, state):
         self.actor.eval()
-        state = torch.tensor(np.array([state]), dtype=torch.float)
-        mu = self.actor(state)
+        state = torch.tensor(np.array([state]), dtype=torch.float, device=self.device)
+        mu = self.actor(state).to(self.device)
         self.actor.train()
-        return mu.detach().numpy()[0]
+        return mu.cpu().detach().numpy()[0]
 
     # 往经验池添加数据
     def push(self, state, action, reward, next_state, done):
@@ -59,11 +63,11 @@ class DDPGAgent:
 
         states, actions, rewards, next_states, dones = self.memory.sample(self.batch_size)
 
-        states = torch.tensor(states, dtype=torch.float)
-        actions = torch.tensor(actions, dtype=torch.float)
-        rewards = torch.tensor(rewards, dtype=torch.float)
-        next_states = torch.tensor(next_states, dtype=torch.float)
-        dones = torch.tensor(dones)
+        states = torch.tensor(states, dtype=torch.float, device=self.device)
+        actions = torch.tensor(actions, dtype=torch.float, device=self.device)
+        rewards = torch.tensor(rewards, dtype=torch.float, device=self.device)
+        next_states = torch.tensor(next_states, dtype=torch.float, device=self.device)
+        dones = torch.tensor(dones, device=self.device)
 
         actions_target = self.actor_target(next_states)
         next_state_critic_value = self.critic_target(next_states, actions_target)
