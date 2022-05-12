@@ -1,8 +1,9 @@
 import numpy as np
 import torch
 import torch.nn as nn
+from collections import OrderedDict
 from common.untils import ReplayBuffer, OUActionNoise
-from common.DDPGNetworks import ActorNetwork, CriticNetwork
+from model.DDPGNetworks import ActorNetwork, CriticNetwork
 
 
 class DDPGAgent:
@@ -12,6 +13,10 @@ class DDPGAgent:
         self.alpha = cfg.alpha
         self.beta = cfg.beta
         self.gamma = cfg.gamma
+<<<<<<< Updated upstream:agent.py
+=======
+        self.device = cfg.device
+>>>>>>> Stashed changes:model/agent.py
 
         self.memory = ReplayBuffer(cfg.capacity)  # 经验回放池
         self.noise = OUActionNoise(mu=np.zeros(action_dim))  # OU噪声
@@ -24,7 +29,11 @@ class DDPGAgent:
         # critic_network
         self.critic = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters(), lr=cfg.beta, weight_decay=0.01)
+<<<<<<< Updated upstream:agent.py
         self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
+=======
+        self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
+>>>>>>> Stashed changes:model/agent.py
 
         # 软更新
         self.update_network_parameters(tau=1)
@@ -93,29 +102,33 @@ class DDPGAgent:
         if not tau:
             tau = self.tau
 
-        actor_params_dict = dict(self.actor.named_parameters())
-        critic_params_dict = dict(self.critic.named_parameters())
-        actor_target_params_dict = dict(self.actor_target.named_parameters())
-        critic_target_params_dict = dict(self.critic_target.named_parameters())
+        actor_params_dict = OrderedDict(self.actor.named_parameters())
+        critic_params_dict = OrderedDict(self.critic.named_parameters())
+        actor_target_params_dict = OrderedDict(self.actor_target.named_parameters())
+        critic_target_params_dict = OrderedDict(self.critic_target.named_parameters())
 
         for name in critic_params_dict:
-            critic_params_dict[name] = tau * critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
+            critic_params_dict[name] = tau*critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
 
         for name in actor_params_dict:
+<<<<<<< Updated upstream:agent.py
             actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+=======
+            actor_params_dict[name] = tau*actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+>>>>>>> Stashed changes:model/agent.py
 
         self.critic_target.load_state_dict(critic_params_dict)
         self.actor_target.load_state_dict(actor_params_dict)
 
     # 保存模型
-    def save_models(self, model_dir='./models/last_model'):
+    def save_models(self, model_dir='./params/last_model'):
         self.actor.save_model('actor', model_dir)
         self.actor_target.save_model('actor_target', model_dir)
         self.critic.save_model('critic', model_dir)
         self.critic_target.save_model('critic_target', model_dir)
 
     # 载入模型
-    def load_models(self, model_dir='./models/last_model'):
+    def load_models(self, model_dir='./params/last_model'):
         self.actor.load_model('actor', model_dir)
         self.actor_target.load_model('actor_target', model_dir)
         self.critic.load_model('critic', model_dir)

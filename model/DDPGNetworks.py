@@ -49,13 +49,18 @@ class ActorNetwork(nn.Module):
         x = torch.tanh(x)
         return x
 
-    def save_model(self, model_name, model_dir='./models'):
+    def save_model(self, model_name, model_dir='./params'):
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
         torch.save(self.state_dict(), f'{model_dir}/DDPG_{model_name}.pth')
 
+<<<<<<< Updated upstream:common/DDPGNetworks.py
     def load_model(self, model_name, model_dir='./models'):
         self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth'))
+=======
+    def load_model(self, model_name, model_dir='./params'):
+        self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth', map_location='cpu'))
+>>>>>>> Stashed changes:model/DDPGNetworks.py
 
 
 # critic_network
