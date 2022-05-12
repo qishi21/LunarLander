@@ -1,42 +1,16 @@
 import torch
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 torch.cuda.set_device(1)
-=======
 if torch.cuda.is_available():
     torch.cuda.set_device(1)
->>>>>>> Stashed changes
-=======
-if torch.cuda.is_available():
-    torch.cuda.set_device(1)
->>>>>>> Stashed changes
 import logging
 import os
 import gym
 import numpy as np
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-from torch.utils.tensorboard import SummaryWriter
-from model.agent import DDPGAgent
-
-<<<<<<< Updated upstream
-TRAIN_CHECKPOINT = False  # 是否进行训练
-LOAD_MODEL_CHECKPOINT = True  # 是否载入模型
-=======
-TRAIN_CHECKPOINT = True  # 是否进行训练
-LOAD_MODEL_CHECKPOINT = False  # 是否载入模型
->>>>>>> Stashed changes
-=======
-
 from torch.utils.tensorboard import SummaryWriter
 from model.agent import DDPGAgent
 
 TRAIN_CHECKPOINT = True  # 是否进行训练
 LOAD_MODEL_CHECKPOINT = False  # 是否载入模型
->>>>>>> Stashed changes
 RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
 
 
@@ -44,16 +18,10 @@ RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
 class DDPGConfig:
     def __init__(self):
         self.env_name = 'LunarLanderContinuous-v2'  # 环境名称
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         self.algo = 'DDPG'  # 算法名称
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  # 设备
->>>>>>> Stashed changes
-=======
         self.algo = 'DDPG'  # 算法名称
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  # 设备
->>>>>>> Stashed changes
 
         self.alpha = 1e-4  # actor_network学习率
         self.beta = 1e-3  # critic_network学习率
@@ -65,18 +33,8 @@ class DDPGConfig:
         self.fc1_dim = 400  # 隐藏层1的维度
         self.fc2_dim = 300  # 隐藏层2的维度
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        self.train_eps = 500  # 训练的幕数
-        self.eval_eps = 10  # 评估的幕数
-=======
         self.train_eps = 1000  # 训练的幕数
         self.eval_eps = 30  # 评估的幕数
->>>>>>> Stashed changes
-=======
-        self.train_eps = 1000  # 训练的幕数
-        self.eval_eps = 30  # 评估的幕数
->>>>>>> Stashed changes
 
         # 记录最大的奖励值，便于保存最优的模型
         self.max_reward = 0
