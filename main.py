@@ -88,7 +88,7 @@ class DDPGConfig:
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         self.console_handler = logging.StreamHandler()
-        self.file_handler = logging.FileHandler(filename='LunarLander.log')
+        self.file_handler = logging.FileHandler(filename=f'{self.env_name}.log')
         self.formatter = logging.Formatter('%(asctime)20s|%(levelname)s|%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         self.console_handler.setFormatter(self.formatter)
         self.file_handler.setFormatter(self.formatter)

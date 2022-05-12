@@ -118,6 +118,7 @@ class DDPGAgent:
 
         for name in actor_params_dict:
 <<<<<<< Updated upstream:model/agent.py
+<<<<<<< Updated upstream:model/agent.py
 <<<<<<< Updated upstream:agent.py
             actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 =======
@@ -125,6 +126,9 @@ class DDPGAgent:
 >>>>>>> Stashed changes:model/agent.py
 =======
             actor_params_dict[name] = tau*actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+>>>>>>> Stashed changes:agent.py
+=======
+            actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 >>>>>>> Stashed changes:agent.py
 
         self.critic_target.load_state_dict(critic_params_dict)
