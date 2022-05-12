@@ -13,8 +13,11 @@ class DDPGAgent:
         self.alpha = cfg.alpha
         self.beta = cfg.beta
         self.gamma = cfg.gamma
+<<<<<<< Updated upstream:model/agent.py
 <<<<<<< Updated upstream:agent.py
 =======
+=======
+>>>>>>> Stashed changes:agent.py
         self.device = cfg.device
 >>>>>>> Stashed changes:model/agent.py
 
@@ -33,7 +36,10 @@ class DDPGAgent:
         self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
 =======
         self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim).to(cfg.device)
+<<<<<<< Updated upstream:model/agent.py
 >>>>>>> Stashed changes:model/agent.py
+=======
+>>>>>>> Stashed changes:agent.py
 
         # 软更新
         self.update_network_parameters(tau=1)
@@ -111,11 +117,15 @@ class DDPGAgent:
             critic_params_dict[name] = tau*critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
 
         for name in actor_params_dict:
+<<<<<<< Updated upstream:model/agent.py
 <<<<<<< Updated upstream:agent.py
             actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 =======
             actor_params_dict[name] = tau*actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 >>>>>>> Stashed changes:model/agent.py
+=======
+            actor_params_dict[name] = tau*actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+>>>>>>> Stashed changes:agent.py
 
         self.critic_target.load_state_dict(critic_params_dict)
         self.actor_target.load_state_dict(actor_params_dict)

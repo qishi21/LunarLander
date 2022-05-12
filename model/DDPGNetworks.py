@@ -54,10 +54,13 @@ class ActorNetwork(nn.Module):
             os.makedirs(model_dir)
         torch.save(self.state_dict(), f'{model_dir}/DDPG_{model_name}.pth')
 
+<<<<<<< Updated upstream:model/DDPGNetworks.py
 <<<<<<< Updated upstream:common/DDPGNetworks.py
     def load_model(self, model_name, model_dir='./models'):
         self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth'))
 =======
+=======
+>>>>>>> Stashed changes:common/DDPGNetworks.py
     def load_model(self, model_name, model_dir='./params'):
         self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth', map_location='cpu'))
 >>>>>>> Stashed changes:model/DDPGNetworks.py
