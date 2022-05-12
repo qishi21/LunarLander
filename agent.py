@@ -102,7 +102,7 @@ class DDPGAgent:
             critic_params_dict[name] = tau * critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
 
         for name in actor_params_dict:
-            actor_target_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+            actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 
         self.critic_target.load_state_dict(critic_params_dict)
         self.actor_target.load_state_dict(actor_params_dict)

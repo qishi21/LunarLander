@@ -1,3 +1,5 @@
+import torch
+torch.cuda.set_device(1)
 import logging
 import os
 import gym
