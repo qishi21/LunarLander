@@ -55,7 +55,7 @@ class ActorNetwork(nn.Module):
         torch.save(self.state_dict(), f'{model_dir}/DDPG_{model_name}.pth')
 
     def load_model(self, model_name, model_dir='./models'):
-        self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth', map_location='cpu'))
+        self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth'))
 
 
 # critic_network
@@ -115,4 +115,4 @@ class CriticNetwork(nn.Module):
         torch.save(self.state_dict(), f'{model_dir}/DDPG_{model_name}.pth')
 
     def load_model(self, model_name, model_dir):
-        self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth', map_location='cpu'))
+        self.load_state_dict(torch.load(f'{model_dir}/DDPG_{model_name}.pth'))
