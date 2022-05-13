@@ -1,0 +1,1132 @@
+ 2022-05-13 00:02:03|INFO|Start training.
+ 2022-05-13 00:02:03|INFO|env:LunarLanderContinuous-v2, algo:DDPG, device:cuda
+ 2022-05-13 00:02:06|INFO|episode:  1/1000|steps: 119|ep_reward:-124.97
+ 2022-05-13 00:02:10|INFO|episode:  2/1000|steps:  91|ep_reward:-631.87
+ 2022-05-13 00:02:12|INFO|episode:  3/1000|steps:  69|ep_reward:-353.21
+ 2022-05-13 00:02:14|INFO|episode:  4/1000|steps:  56|ep_reward:-398.58
+ 2022-05-13 00:02:16|INFO|episode:  5/1000|steps:  48|ep_reward:-393.47
+ 2022-05-13 00:02:18|INFO|episode:  6/1000|steps:  61|ep_reward:-571.31
+ 2022-05-13 00:02:22|INFO|episode:  7/1000|steps: 132|ep_reward:-219.31
+ 2022-05-13 00:02:24|INFO|episode:  8/1000|steps:  65|ep_reward:-274.27
+ 2022-05-13 00:02:26|INFO|episode:  9/1000|steps:  62|ep_reward:-386.14
+ 2022-05-13 00:02:28|INFO|episode: 10/1000|steps:  76|ep_reward:-440.64
+ 2022-05-13 00:02:31|INFO|episode: 11/1000|steps:  83|ep_reward:-699.54
+ 2022-05-13 00:02:33|INFO|episode: 12/1000|steps:  52|ep_reward:-400.48
+ 2022-05-13 00:02:35|INFO|episode: 13/1000|steps:  68|ep_reward:-562.44
+ 2022-05-13 00:02:39|INFO|episode: 14/1000|steps: 122|ep_reward:-757.39
+ 2022-05-13 00:02:41|INFO|episode: 15/1000|steps:  69|ep_reward:-817.76
+ 2022-05-13 00:02:44|INFO|episode: 16/1000|steps:  70|ep_reward:-825.55
+ 2022-05-13 00:02:48|INFO|episode: 17/1000|steps: 130|ep_reward:-134.12
+ 2022-05-13 00:02:51|INFO|episode: 18/1000|steps:  91|ep_reward:-506.79
+ 2022-05-13 00:02:56|INFO|episode: 19/1000|steps: 164|ep_reward:-538.91
+ 2022-05-13 00:02:59|INFO|episode: 20/1000|steps:  90|ep_reward:-309.21
+ 2022-05-13 00:03:05|INFO|episode: 21/1000|steps: 179|ep_reward:-1081.02
+ 2022-05-13 00:03:09|INFO|episode: 22/1000|steps: 111|ep_reward:-498.69
+ 2022-05-13 00:03:13|INFO|episode: 23/1000|steps: 141|ep_reward:-531.37
+ 2022-05-13 00:03:17|INFO|episode: 24/1000|steps: 114|ep_reward:-277.63
+ 2022-05-13 00:03:20|INFO|episode: 25/1000|steps: 114|ep_reward:-367.58
+ 2022-05-13 00:03:25|INFO|episode: 26/1000|steps: 149|ep_reward:-281.32
+ 2022-05-13 00:03:30|INFO|episode: 27/1000|steps: 124|ep_reward:-34.93
+ 2022-05-13 00:03:33|INFO|episode: 28/1000|steps:  84|ep_reward:-638.93
+ 2022-05-13 00:03:38|INFO|episode: 29/1000|steps: 162|ep_reward:-401.66
+ 2022-05-13 00:03:40|INFO|episode: 30/1000|steps:  88|ep_reward:-99.39
+ 2022-05-13 00:03:43|INFO|episode: 31/1000|steps:  81|ep_reward:-151.18
+ 2022-05-13 00:03:46|INFO|episode: 32/1000|steps:  92|ep_reward:-138.09
+ 2022-05-13 00:03:49|INFO|episode: 33/1000|steps:  81|ep_reward:-653.64
+ 2022-05-13 00:03:52|INFO|episode: 34/1000|steps: 111|ep_reward:-370.19
+ 2022-05-13 00:03:57|INFO|episode: 35/1000|steps: 158|ep_reward:-441.77
+ 2022-05-13 00:04:02|INFO|episode: 36/1000|steps: 171|ep_reward:-251.27
+ 2022-05-13 00:04:08|INFO|episode: 37/1000|steps: 169|ep_reward:-251.31
+ 2022-05-13 00:04:12|INFO|episode: 38/1000|steps: 144|ep_reward:-389.68
+ 2022-05-13 00:04:15|INFO|episode: 39/1000|steps:  76|ep_reward:-122.82
+ 2022-05-13 00:04:18|INFO|episode: 40/1000|steps: 112|ep_reward:-81.41
+ 2022-05-13 00:04:21|INFO|episode: 41/1000|steps:  88|ep_reward:-134.31
+ 2022-05-13 00:04:24|INFO|episode: 42/1000|steps:  77|ep_reward:-123.05
+ 2022-05-13 00:04:26|INFO|episode: 43/1000|steps:  60|ep_reward:-125.57
+ 2022-05-13 00:04:29|INFO|episode: 44/1000|steps:  94|ep_reward:-128.53
+ 2022-05-13 00:04:32|INFO|episode: 45/1000|steps: 106|ep_reward:-101.85
+ 2022-05-13 00:04:34|INFO|episode: 46/1000|steps:  79|ep_reward:-73.88
+ 2022-05-13 00:04:40|INFO|episode: 47/1000|steps: 167|ep_reward:-167.35
+ 2022-05-13 00:04:41|INFO|episode: 48/1000|steps:  56|ep_reward:-97.19
+ 2022-05-13 00:04:48|INFO|episode: 49/1000|steps: 194|ep_reward:-146.71
+ 2022-05-13 00:04:54|INFO|episode: 50/1000|steps: 197|ep_reward:-159.46
+ 2022-05-13 00:04:58|INFO|episode: 51/1000|steps: 127|ep_reward:-348.45
+ 2022-05-13 00:05:02|INFO|episode: 52/1000|steps: 132|ep_reward:-33.75
+ 2022-05-13 00:05:05|INFO|episode: 53/1000|steps: 106|ep_reward:-161.32
+ 2022-05-13 00:05:07|INFO|episode: 54/1000|steps:  65|ep_reward:-156.7
+ 2022-05-13 00:05:09|INFO|episode: 55/1000|steps:  55|ep_reward:-104.68
+ 2022-05-13 00:05:11|INFO|episode: 56/1000|steps:  73|ep_reward:-162.33
+ 2022-05-13 00:05:14|INFO|episode: 57/1000|steps:  83|ep_reward:-69.6
+ 2022-05-13 00:05:16|INFO|episode: 58/1000|steps:  77|ep_reward:-98.55
+ 2022-05-13 00:05:19|INFO|episode: 59/1000|steps:  68|ep_reward:-28.32
+ 2022-05-13 00:05:21|INFO|episode: 60/1000|steps:  78|ep_reward:-126.3
+ 2022-05-13 00:05:26|INFO|episode: 61/1000|steps: 135|ep_reward:-54.98
+ 2022-05-13 00:05:33|INFO|episode: 62/1000|steps: 220|ep_reward:-42.09
+ 2022-05-13 00:05:47|INFO|episode: 63/1000|steps: 440|ep_reward:-268.34
+ 2022-05-13 00:05:55|INFO|episode: 64/1000|steps: 263|ep_reward:-295.54
+ 2022-05-13 00:06:00|INFO|episode: 65/1000|steps: 143|ep_reward:-313.66
+ 2022-05-13 00:06:06|INFO|episode: 66/1000|steps: 201|ep_reward:-360.5
+ 2022-05-13 00:06:09|INFO|episode: 67/1000|steps: 100|ep_reward:-236.34
+ 2022-05-13 00:06:14|INFO|episode: 68/1000|steps: 153|ep_reward:-253.4
+ 2022-05-13 00:06:20|INFO|episode: 69/1000|steps: 187|ep_reward:-71.14
+ 2022-05-13 00:06:23|INFO|episode: 70/1000|steps:  94|ep_reward:-84.84
+ 2022-05-13 00:06:27|INFO|episode: 71/1000|steps: 141|ep_reward:-161.55
+ 2022-05-13 00:06:30|INFO|episode: 72/1000|steps:  93|ep_reward:-94.86
+ 2022-05-13 00:06:33|INFO|episode: 73/1000|steps:  79|ep_reward:-133.62
+ 2022-05-13 00:06:37|INFO|episode: 74/1000|steps: 125|ep_reward:-147.25
+ 2022-05-13 00:06:42|INFO|episode: 75/1000|steps: 156|ep_reward:-62.36
+ 2022-05-13 00:06:46|INFO|episode: 76/1000|steps: 135|ep_reward:-33.48
+ 2022-05-13 00:06:51|INFO|episode: 77/1000|steps: 126|ep_reward:-118.59
+ 2022-05-13 00:06:55|INFO|episode: 78/1000|steps: 114|ep_reward:-98.8
+ 2022-05-13 00:06:58|INFO|episode: 79/1000|steps:  84|ep_reward:-128.12
+ 2022-05-13 00:07:11|INFO|episode: 80/1000|steps: 384|ep_reward:-442.19
+ 2022-05-13 00:07:28|INFO|episode: 81/1000|steps: 452|ep_reward:-136.99
+ 2022-05-13 00:07:36|INFO|episode: 82/1000|steps: 240|ep_reward:-61.24
+ 2022-05-13 00:07:40|INFO|episode: 83/1000|steps: 124|ep_reward:-12.43
+ 2022-05-13 00:07:45|INFO|episode: 84/1000|steps: 144|ep_reward:-82.3
+ 2022-05-13 00:07:48|INFO|episode: 85/1000|steps:  73|ep_reward:-128.31
+ 2022-05-13 00:07:51|INFO|episode: 86/1000|steps:  79|ep_reward:-144.02
+ 2022-05-13 00:07:56|INFO|episode: 87/1000|steps: 154|ep_reward:-63.55
+ 2022-05-13 00:08:05|INFO|episode: 88/1000|steps: 255|ep_reward:-99.79
+ 2022-05-13 00:08:13|INFO|episode: 89/1000|steps: 226|ep_reward:-80.52
+ 2022-05-13 00:08:28|INFO|episode: 90/1000|steps: 419|ep_reward:-37.33
+ 2022-05-13 00:08:31|INFO|episode: 91/1000|steps:  81|ep_reward:-134.27
+ 2022-05-13 00:08:43|INFO|episode: 92/1000|steps: 345|ep_reward:-348.54
+ 2022-05-13 00:08:49|INFO|episode: 93/1000|steps: 160|ep_reward:-93.86
+ 2022-05-13 00:09:07|INFO|episode: 94/1000|steps: 519|ep_reward:-302.34
+ 2022-05-13 00:09:09|INFO|episode: 95/1000|steps:  54|ep_reward:-96.03
+ 2022-05-13 00:09:11|INFO|episode: 96/1000|steps:  67|ep_reward:-0.39
+ 2022-05-13 00:09:19|INFO|episode: 97/1000|steps: 248|ep_reward:-70.02
+ 2022-05-13 00:09:26|INFO|episode: 98/1000|steps: 245|ep_reward:-89.63
+ 2022-05-13 00:09:35|INFO|episode: 99/1000|steps: 282|ep_reward:-57.14
+ 2022-05-13 00:09:45|INFO|episode:100/1000|steps: 319|ep_reward:-97.83
+ 2022-05-13 00:09:57|INFO|episode:101/1000|steps: 353|ep_reward:-51.95
+ 2022-05-13 00:10:04|INFO|episode:102/1000|steps: 229|ep_reward:-93.17
+ 2022-05-13 00:10:06|INFO|episode:103/1000|steps:  75|ep_reward:-122.8
+ 2022-05-13 00:10:12|INFO|episode:104/1000|steps: 179|ep_reward:-20.46
+ 2022-05-13 00:10:33|INFO|episode:105/1000|steps: 655|ep_reward:-46.55
+ 2022-05-13 00:10:46|INFO|episode:106/1000|steps: 411|ep_reward:-66.12
+ 2022-05-13 00:10:55|INFO|episode:107/1000|steps: 275|ep_reward:-1.35
+ 2022-05-13 00:11:28|INFO|episode:108/1000|steps:1000|ep_reward:-47.66
+ 2022-05-13 00:11:31|INFO|episode:109/1000|steps:  88|ep_reward:-113.78
+ 2022-05-13 00:11:58|INFO|episode:110/1000|steps: 830|ep_reward:-184.26
+ 2022-05-13 00:12:03|INFO|episode:111/1000|steps: 141|ep_reward:5.51
+ 2022-05-13 00:12:05|INFO|episode:112/1000|steps:  92|ep_reward:-82.99
+ 2022-05-13 00:12:12|INFO|episode:113/1000|steps: 223|ep_reward:-67.08
+ 2022-05-13 00:12:18|INFO|episode:114/1000|steps: 193|ep_reward:-80.95
+ 2022-05-13 00:12:26|INFO|episode:115/1000|steps: 232|ep_reward:33.94
+ 2022-05-13 00:12:56|INFO|episode:116/1000|steps:1000|ep_reward:21.69
+ 2022-05-13 00:12:58|INFO|episode:117/1000|steps:  62|ep_reward:-210.83
+ 2022-05-13 00:13:29|INFO|episode:118/1000|steps:1000|ep_reward:-114.93
+ 2022-05-13 00:14:02|INFO|episode:119/1000|steps:1000|ep_reward:-22.77
+ 2022-05-13 00:14:13|INFO|episode:120/1000|steps: 391|ep_reward:-218.74
+ 2022-05-13 00:14:21|INFO|episode:121/1000|steps: 254|ep_reward:2.84
+ 2022-05-13 00:14:41|INFO|episode:122/1000|steps: 664|ep_reward:-98.8
+ 2022-05-13 00:14:59|INFO|episode:123/1000|steps: 585|ep_reward:3.99
+ 2022-05-13 00:15:06|INFO|episode:124/1000|steps: 244|ep_reward:-23.45
+ 2022-05-13 00:15:10|INFO|episode:125/1000|steps: 142|ep_reward:17.82
+ 2022-05-13 00:15:12|INFO|episode:126/1000|steps:  68|ep_reward:-58.68
+ 2022-05-13 00:15:17|INFO|episode:127/1000|steps: 152|ep_reward:-103.16
+ 2022-05-13 00:15:24|INFO|episode:128/1000|steps: 241|ep_reward:-70.04
+ 2022-05-13 00:15:29|INFO|episode:129/1000|steps: 165|ep_reward:-38.47
+ 2022-05-13 00:15:48|INFO|episode:130/1000|steps: 539|ep_reward:-76.2
+ 2022-05-13 00:16:02|INFO|episode:131/1000|steps: 408|ep_reward:-36.52
+ 2022-05-13 00:16:04|INFO|episode:132/1000|steps:  86|ep_reward:-66.31
+ 2022-05-13 00:16:20|INFO|episode:133/1000|steps: 496|ep_reward:-33.37
+ 2022-05-13 00:16:32|INFO|episode:134/1000|steps: 378|ep_reward:-15.02
+ 2022-05-13 00:16:45|INFO|episode:135/1000|steps: 418|ep_reward:-37.83
+ 2022-05-13 00:17:06|INFO|episode:136/1000|steps: 655|ep_reward:151.78
+ 2022-05-13 00:17:39|INFO|episode:137/1000|steps:1000|ep_reward:2.78
+ 2022-05-13 00:17:46|INFO|episode:138/1000|steps: 257|ep_reward:-54.79
+ 2022-05-13 00:18:15|INFO|episode:139/1000|steps: 838|ep_reward:175.09
+ 2022-05-13 00:18:41|INFO|episode:140/1000|steps: 825|ep_reward:219.18
+ 2022-05-13 00:19:04|INFO|episode:141/1000|steps: 716|ep_reward:231.04
+ 2022-05-13 00:19:08|INFO|episode:142/1000|steps: 113|ep_reward:-6.0
+ 2022-05-13 00:19:11|INFO|episode:143/1000|steps: 117|ep_reward:-79.43
+ 2022-05-13 00:19:20|INFO|episode:144/1000|steps: 293|ep_reward:281.23
+ 2022-05-13 00:19:33|INFO|episode:145/1000|steps: 402|ep_reward:253.89
+ 2022-05-13 00:19:37|INFO|episode:146/1000|steps: 128|ep_reward:8.34
+ 2022-05-13 00:19:41|INFO|episode:147/1000|steps: 118|ep_reward:-28.44
+ 2022-05-13 00:20:03|INFO|episode:148/1000|steps: 693|ep_reward:200.26
+ 2022-05-13 00:20:14|INFO|episode:149/1000|steps: 333|ep_reward:255.16
+ 2022-05-13 00:20:19|INFO|episode:150/1000|steps: 184|ep_reward:-431.87
+ 2022-05-13 00:20:22|INFO|episode:151/1000|steps: 110|ep_reward:25.34
+ 2022-05-13 00:20:29|INFO|episode:152/1000|steps: 220|ep_reward:-57.61
+ 2022-05-13 00:20:44|INFO|episode:153/1000|steps: 443|ep_reward:241.94
+ 2022-05-13 00:20:52|INFO|episode:154/1000|steps: 279|ep_reward:308.43
+ 2022-05-13 00:21:09|INFO|episode:155/1000|steps: 524|ep_reward:225.21
+ 2022-05-13 00:21:20|INFO|episode:156/1000|steps: 336|ep_reward:246.48
+ 2022-05-13 00:21:37|INFO|episode:157/1000|steps: 528|ep_reward:223.28
+ 2022-05-13 00:21:41|INFO|episode:158/1000|steps: 115|ep_reward:5.05
+ 2022-05-13 00:21:50|INFO|episode:159/1000|steps: 310|ep_reward:280.2
+ 2022-05-13 00:22:00|INFO|episode:160/1000|steps: 325|ep_reward:247.08
+ 2022-05-13 00:22:05|INFO|episode:161/1000|steps: 145|ep_reward:-12.13
+ 2022-05-13 00:22:20|INFO|episode:162/1000|steps: 477|ep_reward:211.38
+ 2022-05-13 00:22:31|INFO|episode:163/1000|steps: 359|ep_reward:231.99
+ 2022-05-13 00:22:40|INFO|episode:164/1000|steps: 280|ep_reward:255.68
+ 2022-05-13 00:22:59|INFO|episode:165/1000|steps: 582|ep_reward:224.72
+ 2022-05-13 00:23:14|INFO|episode:166/1000|steps: 415|ep_reward:215.39
+ 2022-05-13 00:23:21|INFO|episode:167/1000|steps: 221|ep_reward:48.17
+ 2022-05-13 00:23:38|INFO|episode:168/1000|steps: 491|ep_reward:248.46
+ 2022-05-13 00:23:42|INFO|episode:169/1000|steps:  99|ep_reward:-478.61
+ 2022-05-13 00:23:57|INFO|episode:170/1000|steps: 450|ep_reward:235.14
+ 2022-05-13 00:24:10|INFO|episode:171/1000|steps: 385|ep_reward:226.2
+ 2022-05-13 00:24:22|INFO|episode:172/1000|steps: 379|ep_reward:265.71
+ 2022-05-13 00:24:39|INFO|episode:173/1000|steps: 578|ep_reward:229.33
+ 2022-05-13 00:24:46|INFO|episode:174/1000|steps: 259|ep_reward:303.38
+ 2022-05-13 00:24:58|INFO|episode:175/1000|steps: 413|ep_reward:249.02
+ 2022-05-13 00:24:58|INFO|Save best model. 前100幕的平均reward为3.01.
+ 2022-05-13 00:25:08|INFO|episode:176/1000|steps: 340|ep_reward:247.22
+ 2022-05-13 00:25:08|INFO|Save best model. 前100幕的平均reward为5.82.
+ 2022-05-13 00:25:20|INFO|episode:177/1000|steps: 386|ep_reward:241.04
+ 2022-05-13 00:25:20|INFO|Save best model. 前100幕的平均reward为9.42.
+ 2022-05-13 00:25:31|INFO|episode:178/1000|steps: 385|ep_reward:217.17
+ 2022-05-13 00:25:31|INFO|Save best model. 前100幕的平均reward为12.58.
+ 2022-05-13 00:25:43|INFO|episode:179/1000|steps: 379|ep_reward:257.77
+ 2022-05-13 00:25:43|INFO|Save best model. 前100幕的平均reward为16.43.
+ 2022-05-13 00:25:49|INFO|episode:180/1000|steps: 202|ep_reward:294.68
+ 2022-05-13 00:25:49|INFO|Save best model. 前100幕的平均reward为23.8.
+ 2022-05-13 00:26:00|INFO|episode:181/1000|steps: 360|ep_reward:263.76
+ 2022-05-13 00:26:00|INFO|Save best model. 前100幕的平均reward为27.81.
+ 2022-05-13 00:26:07|INFO|episode:182/1000|steps: 227|ep_reward:264.07
+ 2022-05-13 00:26:07|INFO|Save best model. 前100幕的平均reward为31.06.
+ 2022-05-13 00:26:14|INFO|episode:183/1000|steps: 213|ep_reward:-0.58
+ 2022-05-13 00:26:14|INFO|Save best model. 前100幕的平均reward为31.18.
+ 2022-05-13 00:26:25|INFO|episode:184/1000|steps: 353|ep_reward:257.88
+ 2022-05-13 00:26:25|INFO|Save best model. 前100幕的平均reward为34.58.
+ 2022-05-13 00:26:35|INFO|episode:185/1000|steps: 277|ep_reward:248.46
+ 2022-05-13 00:26:35|INFO|Save best model. 前100幕的平均reward为38.35.
+ 2022-05-13 00:27:04|INFO|episode:186/1000|steps: 780|ep_reward:197.32
+ 2022-05-13 00:27:04|INFO|Save best model. 前100幕的平均reward为41.77.
+ 2022-05-13 00:27:13|INFO|episode:187/1000|steps: 282|ep_reward:284.35
+ 2022-05-13 00:27:13|INFO|Save best model. 前100幕的平均reward为45.24.
+ 2022-05-13 00:27:25|INFO|episode:188/1000|steps: 405|ep_reward:244.72
+ 2022-05-13 00:27:25|INFO|Save best model. 前100幕的平均reward为48.69.
+ 2022-05-13 00:27:35|INFO|episode:189/1000|steps: 290|ep_reward:258.99
+ 2022-05-13 00:27:35|INFO|Save best model. 前100幕的平均reward为52.08.
+ 2022-05-13 00:27:44|INFO|episode:190/1000|steps: 303|ep_reward:257.69
+ 2022-05-13 00:27:44|INFO|Save best model. 前100幕的平均reward为55.03.
+ 2022-05-13 00:27:55|INFO|episode:191/1000|steps: 350|ep_reward:247.28
+ 2022-05-13 00:27:55|INFO|Save best model. 前100幕的平均reward为58.85.
+ 2022-05-13 00:28:05|INFO|episode:192/1000|steps: 289|ep_reward:257.71
+ 2022-05-13 00:28:05|INFO|Save best model. 前100幕的平均reward为64.91.
+ 2022-05-13 00:28:20|INFO|episode:193/1000|steps: 477|ep_reward:259.01
+ 2022-05-13 00:28:20|INFO|Save best model. 前100幕的平均reward为68.44.
+ 2022-05-13 00:28:33|INFO|episode:194/1000|steps: 413|ep_reward:266.81
+ 2022-05-13 00:28:33|INFO|Save best model. 前100幕的平均reward为74.13.
+ 2022-05-13 00:28:41|INFO|episode:195/1000|steps: 256|ep_reward:204.36
+ 2022-05-13 00:28:41|INFO|Save best model. 前100幕的平均reward为77.14.
+ 2022-05-13 00:28:54|INFO|episode:196/1000|steps: 426|ep_reward:235.2
+ 2022-05-13 00:28:54|INFO|Save best model. 前100幕的平均reward为79.49.
+ 2022-05-13 00:29:12|INFO|episode:197/1000|steps: 596|ep_reward:250.74
+ 2022-05-13 00:29:12|INFO|Save best model. 前100幕的平均reward为82.7.
+ 2022-05-13 00:29:23|INFO|episode:198/1000|steps: 321|ep_reward:245.29
+ 2022-05-13 00:29:23|INFO|Save best model. 前100幕的平均reward为86.05.
+ 2022-05-13 00:29:32|INFO|episode:199/1000|steps: 290|ep_reward:273.7
+ 2022-05-13 00:29:32|INFO|Save best model. 前100幕的平均reward为89.36.
+ 2022-05-13 00:29:40|INFO|episode:200/1000|steps: 277|ep_reward:266.0
+ 2022-05-13 00:29:40|INFO|Save best model. 前100幕的平均reward为93.0.
+ 2022-05-13 00:29:48|INFO|episode:201/1000|steps: 252|ep_reward:256.3
+ 2022-05-13 00:29:48|INFO|Save best model. 前100幕的平均reward为96.08.
+ 2022-05-13 00:29:54|INFO|episode:202/1000|steps: 204|ep_reward:296.62
+ 2022-05-13 00:29:54|INFO|Save best model. 前100幕的平均reward为99.98.
+ 2022-05-13 00:30:01|INFO|episode:203/1000|steps: 242|ep_reward:245.51
+ 2022-05-13 00:30:01|INFO|Save best model. 前100幕的平均reward为103.66.
+ 2022-05-13 00:30:10|INFO|episode:204/1000|steps: 280|ep_reward:253.6
+ 2022-05-13 00:30:10|INFO|Save best model. 前100幕的平均reward为106.4.
+ 2022-05-13 00:30:21|INFO|episode:205/1000|steps: 364|ep_reward:278.32
+ 2022-05-13 00:30:21|INFO|Save best model. 前100幕的平均reward为109.65.
+ 2022-05-13 00:30:30|INFO|episode:206/1000|steps: 304|ep_reward:273.5
+ 2022-05-13 00:30:30|INFO|Save best model. 前100幕的平均reward为113.05.
+ 2022-05-13 00:30:40|INFO|episode:207/1000|steps: 311|ep_reward:258.95
+ 2022-05-13 00:30:40|INFO|Save best model. 前100幕的平均reward为115.65.
+ 2022-05-13 00:30:48|INFO|episode:208/1000|steps: 277|ep_reward:270.89
+ 2022-05-13 00:30:48|INFO|Save best model. 前100幕的平均reward为118.83.
+ 2022-05-13 00:31:01|INFO|episode:209/1000|steps: 409|ep_reward:216.02
+ 2022-05-13 00:31:01|INFO|Save best model. 前100幕的平均reward为122.13.
+ 2022-05-13 00:31:06|INFO|episode:210/1000|steps: 145|ep_reward:-449.53
+ 2022-05-13 00:31:14|INFO|episode:211/1000|steps: 282|ep_reward:-234.82
+ 2022-05-13 00:31:22|INFO|episode:212/1000|steps: 250|ep_reward:220.55
+ 2022-05-13 00:31:31|INFO|episode:213/1000|steps: 280|ep_reward:269.59
+ 2022-05-13 00:31:31|INFO|Save best model. 前100幕的平均reward为123.48.
+ 2022-05-13 00:31:40|INFO|episode:214/1000|steps: 318|ep_reward:288.94
+ 2022-05-13 00:31:40|INFO|Save best model. 前100幕的平均reward为127.18.
+ 2022-05-13 00:31:51|INFO|episode:215/1000|steps: 346|ep_reward:252.08
+ 2022-05-13 00:31:51|INFO|Save best model. 前100幕的平均reward为129.36.
+ 2022-05-13 00:32:00|INFO|episode:216/1000|steps: 334|ep_reward:278.26
+ 2022-05-13 00:32:00|INFO|Save best model. 前100幕的平均reward为131.92.
+ 2022-05-13 00:32:12|INFO|episode:217/1000|steps: 386|ep_reward:260.39
+ 2022-05-13 00:32:12|INFO|Save best model. 前100幕的平均reward为136.64.
+ 2022-05-13 00:32:21|INFO|episode:218/1000|steps: 299|ep_reward:215.85
+ 2022-05-13 00:32:21|INFO|Save best model. 前100幕的平均reward为139.94.
+ 2022-05-13 00:32:30|INFO|episode:219/1000|steps: 275|ep_reward:234.45
+ 2022-05-13 00:32:30|INFO|Save best model. 前100幕的平均reward为142.52.
+ 2022-05-13 00:32:39|INFO|episode:220/1000|steps: 312|ep_reward:269.0
+ 2022-05-13 00:32:39|INFO|Save best model. 前100幕的平均reward为147.39.
+ 2022-05-13 00:32:48|INFO|episode:221/1000|steps: 299|ep_reward:286.14
+ 2022-05-13 00:32:49|INFO|Save best model. 前100幕的平均reward为150.23.
+ 2022-05-13 00:33:03|INFO|episode:222/1000|steps: 461|ep_reward:238.35
+ 2022-05-13 00:33:03|INFO|Save best model. 前100幕的平均reward为153.6.
+ 2022-05-13 00:33:15|INFO|episode:223/1000|steps: 380|ep_reward:253.33
+ 2022-05-13 00:33:15|INFO|Save best model. 前100幕的平均reward为156.09.
+ 2022-05-13 00:33:24|INFO|episode:224/1000|steps: 275|ep_reward:286.09
+ 2022-05-13 00:33:24|INFO|Save best model. 前100幕的平均reward为159.19.
+ 2022-05-13 00:33:32|INFO|episode:225/1000|steps: 255|ep_reward:263.6
+ 2022-05-13 00:33:32|INFO|Save best model. 前100幕的平均reward为161.64.
+ 2022-05-13 00:33:43|INFO|episode:226/1000|steps: 322|ep_reward:270.56
+ 2022-05-13 00:33:43|INFO|Save best model. 前100幕的平均reward为164.94.
+ 2022-05-13 00:33:53|INFO|episode:227/1000|steps: 320|ep_reward:254.23
+ 2022-05-13 00:33:53|INFO|Save best model. 前100幕的平均reward为168.51.
+ 2022-05-13 00:34:04|INFO|episode:228/1000|steps: 359|ep_reward:258.04
+ 2022-05-13 00:34:04|INFO|Save best model. 前100幕的平均reward为171.79.
+ 2022-05-13 00:34:12|INFO|episode:229/1000|steps: 256|ep_reward:259.2
+ 2022-05-13 00:34:12|INFO|Save best model. 前100幕的平均reward为174.77.
+ 2022-05-13 00:34:19|INFO|episode:230/1000|steps: 227|ep_reward:273.46
+ 2022-05-13 00:34:19|INFO|Save best model. 前100幕的平均reward为178.26.
+ 2022-05-13 00:34:34|INFO|episode:231/1000|steps: 501|ep_reward:291.78
+ 2022-05-13 00:34:34|INFO|Save best model. 前100幕的平均reward为181.55.
+ 2022-05-13 00:34:44|INFO|episode:232/1000|steps: 310|ep_reward:254.81
+ 2022-05-13 00:34:44|INFO|Save best model. 前100幕的平均reward为184.76.
+ 2022-05-13 00:34:55|INFO|episode:233/1000|steps: 342|ep_reward:297.57
+ 2022-05-13 00:34:55|INFO|Save best model. 前100幕的平均reward为188.07.
+ 2022-05-13 00:35:03|INFO|episode:234/1000|steps: 292|ep_reward:250.62
+ 2022-05-13 00:35:03|INFO|Save best model. 前100幕的平均reward为190.72.
+ 2022-05-13 00:35:10|INFO|episode:235/1000|steps: 230|ep_reward:241.15
+ 2022-05-13 00:35:10|INFO|Save best model. 前100幕的平均reward为193.51.
+ 2022-05-13 00:35:22|INFO|episode:236/1000|steps: 397|ep_reward:256.76
+ 2022-05-13 00:35:22|INFO|Save best model. 前100幕的平均reward为194.56.
+ 2022-05-13 00:35:37|INFO|episode:237/1000|steps: 482|ep_reward:220.08
+ 2022-05-13 00:35:37|INFO|Save best model. 前100幕的平均reward为196.74.
+ 2022-05-13 00:35:48|INFO|episode:238/1000|steps: 381|ep_reward:263.1
+ 2022-05-13 00:35:48|INFO|Save best model. 前100幕的平均reward为199.92.
+ 2022-05-13 00:35:56|INFO|episode:239/1000|steps: 267|ep_reward:268.8
+ 2022-05-13 00:35:56|INFO|Save best model. 前100幕的平均reward为200.85.
+ 2022-05-13 00:36:07|INFO|episode:240/1000|steps: 340|ep_reward:253.02
+ 2022-05-13 00:36:07|INFO|Save best model. 前100幕的平均reward为201.19.
+ 2022-05-13 00:36:13|INFO|episode:241/1000|steps: 203|ep_reward:39.73
+ 2022-05-13 00:36:22|INFO|episode:242/1000|steps: 286|ep_reward:251.52
+ 2022-05-13 00:36:22|INFO|Save best model. 前100幕的平均reward为201.85.
+ 2022-05-13 00:36:26|INFO|episode:243/1000|steps: 143|ep_reward:47.27
+ 2022-05-13 00:36:26|INFO|Save best model. 前100幕的平均reward为203.12.
+ 2022-05-13 00:36:33|INFO|episode:244/1000|steps: 223|ep_reward:269.45
+ 2022-05-13 00:36:38|INFO|episode:245/1000|steps: 149|ep_reward:54.63
+ 2022-05-13 00:36:47|INFO|episode:246/1000|steps: 290|ep_reward:259.86
+ 2022-05-13 00:36:47|INFO|Save best model. 前100幕的平均reward为203.53.
+ 2022-05-13 00:36:58|INFO|episode:247/1000|steps: 355|ep_reward:262.79
+ 2022-05-13 00:36:58|INFO|Save best model. 前100幕的平均reward为206.44.
+ 2022-05-13 00:37:05|INFO|episode:248/1000|steps: 222|ep_reward:248.27
+ 2022-05-13 00:37:05|INFO|Save best model. 前100幕的平均reward为206.92.
+ 2022-05-13 00:37:12|INFO|episode:249/1000|steps: 248|ep_reward:268.16
+ 2022-05-13 00:37:12|INFO|Save best model. 前100幕的平均reward为207.05.
+ 2022-05-13 00:37:20|INFO|episode:250/1000|steps: 247|ep_reward:256.85
+ 2022-05-13 00:37:20|INFO|Save best model. 前100幕的平均reward为213.94.
+ 2022-05-13 00:37:28|INFO|episode:251/1000|steps: 235|ep_reward:288.36
+ 2022-05-13 00:37:28|INFO|Save best model. 前100幕的平均reward为216.57.
+ 2022-05-13 00:37:36|INFO|episode:252/1000|steps: 239|ep_reward:261.77
+ 2022-05-13 00:37:36|INFO|Save best model. 前100幕的平均reward为219.76.
+ 2022-05-13 00:37:58|INFO|episode:253/1000|steps: 679|ep_reward:273.96
+ 2022-05-13 00:37:58|INFO|Save best model. 前100幕的平均reward为220.08.
+ 2022-05-13 00:38:05|INFO|episode:254/1000|steps: 228|ep_reward:-213.02
+ 2022-05-13 00:38:10|INFO|episode:255/1000|steps: 151|ep_reward:19.82
+ 2022-05-13 00:38:18|INFO|episode:256/1000|steps: 275|ep_reward:279.31
+ 2022-05-13 00:38:25|INFO|episode:257/1000|steps: 213|ep_reward:275.46
+ 2022-05-13 00:38:33|INFO|episode:258/1000|steps: 285|ep_reward:226.33
+ 2022-05-13 00:38:40|INFO|episode:259/1000|steps: 212|ep_reward:310.9
+ 2022-05-13 00:38:49|INFO|episode:260/1000|steps: 315|ep_reward:261.72
+ 2022-05-13 00:38:52|INFO|episode:261/1000|steps:  81|ep_reward:-52.9
+ 2022-05-13 00:38:58|INFO|episode:262/1000|steps: 197|ep_reward:256.53
+ 2022-05-13 00:39:04|INFO|episode:263/1000|steps: 206|ep_reward:291.8
+ 2022-05-13 00:39:16|INFO|episode:264/1000|steps: 353|ep_reward:217.1
+ 2022-05-13 00:39:23|INFO|episode:265/1000|steps: 231|ep_reward:288.07
+ 2022-05-13 00:39:30|INFO|episode:266/1000|steps: 239|ep_reward:283.18
+ 2022-05-13 00:39:39|INFO|episode:267/1000|steps: 291|ep_reward:264.81
+ 2022-05-13 00:39:49|INFO|episode:268/1000|steps: 316|ep_reward:298.54
+ 2022-05-13 00:39:49|INFO|Save best model. 前100幕的平均reward为220.56.
+ 2022-05-13 00:39:56|INFO|episode:269/1000|steps: 259|ep_reward:284.3
+ 2022-05-13 00:39:56|INFO|Save best model. 前100幕的平均reward为228.19.
+ 2022-05-13 00:40:03|INFO|episode:270/1000|steps: 200|ep_reward:269.35
+ 2022-05-13 00:40:03|INFO|Save best model. 前100幕的平均reward为228.53.
+ 2022-05-13 00:40:08|INFO|episode:271/1000|steps: 169|ep_reward:283.11
+ 2022-05-13 00:40:08|INFO|Save best model. 前100幕的平均reward为229.1.
+ 2022-05-13 00:40:14|INFO|episode:272/1000|steps: 207|ep_reward:245.53
+ 2022-05-13 00:40:21|INFO|episode:273/1000|steps: 226|ep_reward:257.62
+ 2022-05-13 00:40:21|INFO|Save best model. 前100幕的平均reward为229.18.
+ 2022-05-13 00:40:29|INFO|episode:274/1000|steps: 250|ep_reward:262.03
+ 2022-05-13 00:40:36|INFO|episode:275/1000|steps: 254|ep_reward:242.41
+ 2022-05-13 00:40:54|INFO|episode:276/1000|steps: 550|ep_reward:218.36
+ 2022-05-13 00:41:12|INFO|episode:277/1000|steps: 543|ep_reward:239.28
+ 2022-05-13 00:41:22|INFO|episode:278/1000|steps: 305|ep_reward:236.29
+ 2022-05-13 00:41:33|INFO|episode:279/1000|steps: 305|ep_reward:249.81
+ 2022-05-13 00:41:41|INFO|episode:280/1000|steps: 252|ep_reward:229.62
+ 2022-05-13 00:41:49|INFO|episode:281/1000|steps: 238|ep_reward:271.25
+ 2022-05-13 00:41:59|INFO|episode:282/1000|steps: 275|ep_reward:172.89
+ 2022-05-13 00:42:01|INFO|episode:283/1000|steps:  68|ep_reward:-92.3
+ 2022-05-13 00:42:16|INFO|episode:284/1000|steps: 435|ep_reward:284.46
+ 2022-05-13 00:42:25|INFO|episode:285/1000|steps: 252|ep_reward:252.79
+ 2022-05-13 00:42:29|INFO|episode:286/1000|steps: 136|ep_reward:39.26
+ 2022-05-13 00:42:37|INFO|episode:287/1000|steps: 241|ep_reward:282.13
+ 2022-05-13 00:42:46|INFO|episode:288/1000|steps: 258|ep_reward:242.82
+ 2022-05-13 00:42:55|INFO|episode:289/1000|steps: 272|ep_reward:286.25
+ 2022-05-13 00:43:03|INFO|episode:290/1000|steps: 226|ep_reward:285.51
+ 2022-05-13 00:43:12|INFO|episode:291/1000|steps: 277|ep_reward:233.95
+ 2022-05-13 00:43:20|INFO|episode:292/1000|steps: 232|ep_reward:271.96
+ 2022-05-13 00:43:30|INFO|episode:293/1000|steps: 285|ep_reward:262.16
+ 2022-05-13 00:43:38|INFO|episode:294/1000|steps: 289|ep_reward:257.14
+ 2022-05-13 00:43:48|INFO|episode:295/1000|steps: 314|ep_reward:270.27
+ 2022-05-13 00:44:00|INFO|episode:296/1000|steps: 399|ep_reward:230.14
+ 2022-05-13 00:44:09|INFO|episode:297/1000|steps: 266|ep_reward:250.53
+ 2022-05-13 00:44:17|INFO|episode:298/1000|steps: 289|ep_reward:279.33
+ 2022-05-13 00:44:23|INFO|episode:299/1000|steps: 196|ep_reward:299.84
+ 2022-05-13 00:44:29|INFO|episode:300/1000|steps: 188|ep_reward:280.44
+ 2022-05-13 00:44:39|INFO|episode:301/1000|steps: 332|ep_reward:283.96
+ 2022-05-13 00:44:46|INFO|episode:302/1000|steps: 221|ep_reward:298.34
+ 2022-05-13 00:44:52|INFO|episode:303/1000|steps: 198|ep_reward:289.09
+ 2022-05-13 00:45:01|INFO|episode:304/1000|steps: 271|ep_reward:277.5
+ 2022-05-13 00:45:09|INFO|episode:305/1000|steps: 259|ep_reward:298.0
+ 2022-05-13 00:45:15|INFO|episode:306/1000|steps: 210|ep_reward:277.31
+ 2022-05-13 00:45:22|INFO|episode:307/1000|steps: 228|ep_reward:259.41
+ 2022-05-13 00:45:33|INFO|episode:308/1000|steps: 350|ep_reward:259.1
+ 2022-05-13 00:45:46|INFO|episode:309/1000|steps: 379|ep_reward:224.38
+ 2022-05-13 00:45:52|INFO|episode:310/1000|steps: 186|ep_reward:297.16
+ 2022-05-13 00:45:52|INFO|Save best model. 前100幕的平均reward为235.28.
+ 2022-05-13 00:46:03|INFO|episode:311/1000|steps: 361|ep_reward:284.95
+ 2022-05-13 00:46:03|INFO|Save best model. 前100幕的平均reward为240.48.
+ 2022-05-13 00:46:10|INFO|episode:312/1000|steps: 233|ep_reward:238.36
+ 2022-05-13 00:46:10|INFO|Save best model. 前100幕的平均reward为240.66.
+ 2022-05-13 00:46:20|INFO|episode:313/1000|steps: 327|ep_reward:260.07
+ 2022-05-13 00:46:24|INFO|episode:314/1000|steps: 126|ep_reward:-14.15
+ 2022-05-13 00:46:31|INFO|episode:315/1000|steps: 222|ep_reward:263.56
+ 2022-05-13 00:46:39|INFO|episode:316/1000|steps: 231|ep_reward:283.17
+ 2022-05-13 00:46:46|INFO|episode:317/1000|steps: 206|ep_reward:296.78
+ 2022-05-13 00:46:53|INFO|episode:318/1000|steps: 213|ep_reward:248.22
+ 2022-05-13 00:47:05|INFO|episode:319/1000|steps: 341|ep_reward:254.96
+ 2022-05-13 00:47:20|INFO|episode:320/1000|steps: 422|ep_reward:257.86
+ 2022-05-13 00:47:27|INFO|episode:321/1000|steps: 221|ep_reward:286.78
+ 2022-05-13 00:47:37|INFO|episode:322/1000|steps: 278|ep_reward:259.69
+ 2022-05-13 00:47:45|INFO|episode:323/1000|steps: 249|ep_reward:292.83
+ 2022-05-13 00:47:57|INFO|episode:324/1000|steps: 395|ep_reward:283.8
+ 2022-05-13 00:48:05|INFO|episode:325/1000|steps: 269|ep_reward:236.59
+ 2022-05-13 00:48:16|INFO|episode:326/1000|steps: 340|ep_reward:255.08
+ 2022-05-13 00:48:24|INFO|episode:327/1000|steps: 277|ep_reward:254.2
+ 2022-05-13 00:48:34|INFO|episode:328/1000|steps: 296|ep_reward:238.7
+ 2022-05-13 00:48:39|INFO|episode:329/1000|steps: 179|ep_reward:286.47
+ 2022-05-13 00:48:46|INFO|episode:330/1000|steps: 218|ep_reward:254.96
+ 2022-05-13 00:48:54|INFO|episode:331/1000|steps: 283|ep_reward:287.67
+ 2022-05-13 00:49:04|INFO|episode:332/1000|steps: 320|ep_reward:265.04
+ 2022-05-13 00:49:15|INFO|episode:333/1000|steps: 336|ep_reward:279.5
+ 2022-05-13 00:49:24|INFO|episode:334/1000|steps: 321|ep_reward:222.91
+ 2022-05-13 00:49:30|INFO|episode:335/1000|steps: 175|ep_reward:-413.73
+ 2022-05-13 00:49:39|INFO|episode:336/1000|steps: 295|ep_reward:240.83
+ 2022-05-13 00:49:43|INFO|episode:337/1000|steps: 148|ep_reward:16.07
+ 2022-05-13 00:49:51|INFO|episode:338/1000|steps: 243|ep_reward:282.87
+ 2022-05-13 00:49:59|INFO|episode:339/1000|steps: 273|ep_reward:270.79
+ 2022-05-13 00:50:08|INFO|episode:340/1000|steps: 273|ep_reward:301.83
+ 2022-05-13 00:50:13|INFO|episode:341/1000|steps: 201|ep_reward:305.96
+ 2022-05-13 00:50:19|INFO|episode:342/1000|steps: 200|ep_reward:279.71
+ 2022-05-13 00:50:27|INFO|episode:343/1000|steps: 269|ep_reward:302.01
+ 2022-05-13 00:50:35|INFO|episode:344/1000|steps: 274|ep_reward:274.57
+ 2022-05-13 00:50:43|INFO|episode:345/1000|steps: 306|ep_reward:265.41
+ 2022-05-13 00:50:52|INFO|episode:346/1000|steps: 317|ep_reward:287.63
+ 2022-05-13 00:51:05|INFO|episode:347/1000|steps: 449|ep_reward:249.3
+ 2022-05-13 00:51:17|INFO|episode:348/1000|steps: 384|ep_reward:269.28
+ 2022-05-13 00:51:30|INFO|episode:349/1000|steps: 452|ep_reward:237.28
+ 2022-05-13 00:51:36|INFO|episode:350/1000|steps: 228|ep_reward:267.38
+ 2022-05-13 00:51:43|INFO|episode:351/1000|steps: 238|ep_reward:257.26
+ 2022-05-13 00:51:49|INFO|episode:352/1000|steps: 192|ep_reward:255.83
+ 2022-05-13 00:51:55|INFO|episode:353/1000|steps: 214|ep_reward:274.24
+ 2022-05-13 00:52:02|INFO|episode:354/1000|steps: 209|ep_reward:263.61
+ 2022-05-13 00:52:02|INFO|Save best model. 前100幕的平均reward为242.3.
+ 2022-05-13 00:52:09|INFO|episode:355/1000|steps: 247|ep_reward:297.11
+ 2022-05-13 00:52:09|INFO|Save best model. 前100幕的平均reward为245.07.
+ 2022-05-13 00:52:14|INFO|episode:356/1000|steps: 161|ep_reward:40.84
+ 2022-05-13 00:52:21|INFO|episode:357/1000|steps: 218|ep_reward:238.65
+ 2022-05-13 00:52:28|INFO|episode:358/1000|steps: 236|ep_reward:276.69
+ 2022-05-13 00:52:36|INFO|episode:359/1000|steps: 248|ep_reward:286.9
+ 2022-05-13 00:52:44|INFO|episode:360/1000|steps: 262|ep_reward:281.62
+ 2022-05-13 00:52:54|INFO|episode:361/1000|steps: 331|ep_reward:259.59
+ 2022-05-13 00:52:54|INFO|Save best model. 前100幕的平均reward为245.9.
+ 2022-05-13 00:53:03|INFO|episode:362/1000|steps: 277|ep_reward:272.65
+ 2022-05-13 00:53:03|INFO|Save best model. 前100幕的平均reward为246.06.
+ 2022-05-13 00:53:11|INFO|episode:363/1000|steps: 260|ep_reward:271.95
+ 2022-05-13 00:53:20|INFO|episode:364/1000|steps: 309|ep_reward:292.88
+ 2022-05-13 00:53:20|INFO|Save best model. 前100幕的平均reward为246.62.
+ 2022-05-13 00:53:28|INFO|episode:365/1000|steps: 246|ep_reward:293.11
+ 2022-05-13 00:53:28|INFO|Save best model. 前100幕的平均reward为246.67.
+ 2022-05-13 00:53:36|INFO|episode:366/1000|steps: 262|ep_reward:298.41
+ 2022-05-13 00:53:36|INFO|Save best model. 前100幕的平均reward为246.83.
+ 2022-05-13 00:53:43|INFO|episode:367/1000|steps: 236|ep_reward:290.44
+ 2022-05-13 00:53:43|INFO|Save best model. 前100幕的平均reward为247.08.
+ 2022-05-13 00:53:51|INFO|episode:368/1000|steps: 277|ep_reward:241.87
+ 2022-05-13 00:54:00|INFO|episode:369/1000|steps: 293|ep_reward:294.96
+ 2022-05-13 00:54:09|INFO|episode:370/1000|steps: 271|ep_reward:279.59
+ 2022-05-13 00:54:16|INFO|episode:371/1000|steps: 244|ep_reward:303.58
+ 2022-05-13 00:54:23|INFO|episode:372/1000|steps: 236|ep_reward:247.95
+ 2022-05-13 00:54:30|INFO|episode:373/1000|steps: 214|ep_reward:277.79
+ 2022-05-13 00:54:30|INFO|Save best model. 前100幕的平均reward为247.16.
+ 2022-05-13 00:54:37|INFO|episode:374/1000|steps: 245|ep_reward:267.63
+ 2022-05-13 00:54:37|INFO|Save best model. 前100幕的平均reward为247.21.
+ 2022-05-13 00:54:49|INFO|episode:375/1000|steps: 366|ep_reward:271.48
+ 2022-05-13 00:54:49|INFO|Save best model. 前100幕的平均reward为247.5.
+ 2022-05-13 00:54:57|INFO|episode:376/1000|steps: 262|ep_reward:289.63
+ 2022-05-13 00:54:57|INFO|Save best model. 前100幕的平均reward为248.22.
+ 2022-05-13 00:55:03|INFO|episode:377/1000|steps: 223|ep_reward:254.53
+ 2022-05-13 00:55:03|INFO|Save best model. 前100幕的平均reward为248.37.
+ 2022-05-13 00:55:10|INFO|episode:378/1000|steps: 191|ep_reward:276.3
+ 2022-05-13 00:55:10|INFO|Save best model. 前100幕的平均reward为248.77.
+ 2022-05-13 00:55:17|INFO|episode:379/1000|steps: 235|ep_reward:279.12
+ 2022-05-13 00:55:17|INFO|Save best model. 前100幕的平均reward为249.06.
+ 2022-05-13 00:55:27|INFO|episode:380/1000|steps: 314|ep_reward:257.64
+ 2022-05-13 00:55:27|INFO|Save best model. 前100幕的平均reward为249.34.
+ 2022-05-13 00:55:43|INFO|episode:381/1000|steps: 511|ep_reward:229.93
+ 2022-05-13 00:55:53|INFO|episode:382/1000|steps: 307|ep_reward:271.9
+ 2022-05-13 00:55:53|INFO|Save best model. 前100幕的平均reward为249.92.
+ 2022-05-13 00:56:01|INFO|episode:383/1000|steps: 263|ep_reward:240.25
+ 2022-05-13 00:56:01|INFO|Save best model. 前100幕的平均reward为253.24.
+ 2022-05-13 00:56:10|INFO|episode:384/1000|steps: 315|ep_reward:259.95
+ 2022-05-13 00:56:19|INFO|episode:385/1000|steps: 272|ep_reward:268.44
+ 2022-05-13 00:56:26|INFO|episode:386/1000|steps: 241|ep_reward:275.18
+ 2022-05-13 00:56:26|INFO|Save best model. 前100幕的平均reward为255.51.
+ 2022-05-13 00:56:33|INFO|episode:387/1000|steps: 220|ep_reward:255.08
+ 2022-05-13 00:56:40|INFO|episode:388/1000|steps: 227|ep_reward:290.77
+ 2022-05-13 00:56:40|INFO|Save best model. 前100幕的平均reward为255.72.
+ 2022-05-13 00:56:47|INFO|episode:389/1000|steps: 235|ep_reward:308.95
+ 2022-05-13 00:56:47|INFO|Save best model. 前100幕的平均reward为255.95.
+ 2022-05-13 00:56:53|INFO|episode:390/1000|steps: 193|ep_reward:291.49
+ 2022-05-13 00:56:53|INFO|Save best model. 前100幕的平均reward为256.01.
+ 2022-05-13 00:57:02|INFO|episode:391/1000|steps: 288|ep_reward:295.52
+ 2022-05-13 00:57:02|INFO|Save best model. 前100幕的平均reward为256.63.
+ 2022-05-13 00:57:15|INFO|episode:392/1000|steps: 427|ep_reward:262.97
+ 2022-05-13 00:57:24|INFO|episode:393/1000|steps: 283|ep_reward:256.44
+ 2022-05-13 00:57:36|INFO|episode:394/1000|steps: 390|ep_reward:275.95
+ 2022-05-13 00:57:36|INFO|Save best model. 前100幕的平均reward为256.67.
+ 2022-05-13 00:58:02|INFO|episode:395/1000|steps: 805|ep_reward:207.21
+ 2022-05-13 00:58:10|INFO|episode:396/1000|steps: 263|ep_reward:257.12
+ 2022-05-13 00:58:19|INFO|episode:397/1000|steps: 276|ep_reward:233.81
+ 2022-05-13 00:58:26|INFO|episode:398/1000|steps: 237|ep_reward:268.61
+ 2022-05-13 00:58:34|INFO|episode:399/1000|steps: 238|ep_reward:248.12
+ 2022-05-13 00:58:40|INFO|episode:400/1000|steps: 226|ep_reward:245.54
+ 2022-05-13 00:58:47|INFO|episode:401/1000|steps: 217|ep_reward:262.89
+ 2022-05-13 00:58:54|INFO|episode:402/1000|steps: 246|ep_reward:288.86
+ 2022-05-13 00:59:02|INFO|episode:403/1000|steps: 247|ep_reward:280.54
+ 2022-05-13 00:59:10|INFO|episode:404/1000|steps: 252|ep_reward:275.39
+ 2022-05-13 00:59:17|INFO|episode:405/1000|steps: 226|ep_reward:287.85
+ 2022-05-13 00:59:25|INFO|episode:406/1000|steps: 257|ep_reward:298.87
+ 2022-05-13 00:59:32|INFO|episode:407/1000|steps: 246|ep_reward:266.89
+ 2022-05-13 00:59:38|INFO|episode:408/1000|steps: 204|ep_reward:276.46
+ 2022-05-13 00:59:49|INFO|episode:409/1000|steps: 334|ep_reward:295.89
+ 2022-05-13 00:59:53|INFO|episode:410/1000|steps: 139|ep_reward:36.34
+ 2022-05-13 00:59:57|INFO|episode:411/1000|steps: 139|ep_reward:46.73
+ 2022-05-13 01:00:03|INFO|episode:412/1000|steps: 206|ep_reward:283.1
+ 2022-05-13 01:00:09|INFO|episode:413/1000|steps: 175|ep_reward:269.64
+ 2022-05-13 01:00:13|INFO|episode:414/1000|steps: 137|ep_reward:50.31
+ 2022-05-13 01:00:19|INFO|episode:415/1000|steps: 207|ep_reward:277.48
+ 2022-05-13 01:00:25|INFO|episode:416/1000|steps: 186|ep_reward:240.52
+ 2022-05-13 01:00:33|INFO|episode:417/1000|steps: 260|ep_reward:262.87
+ 2022-05-13 01:00:41|INFO|episode:418/1000|steps: 256|ep_reward:256.12
+ 2022-05-13 01:00:54|INFO|episode:419/1000|steps: 409|ep_reward:260.96
+ 2022-05-13 01:00:59|INFO|episode:420/1000|steps: 180|ep_reward:-304.7
+ 2022-05-13 01:01:06|INFO|episode:421/1000|steps: 240|ep_reward:260.85
+ 2022-05-13 01:01:13|INFO|episode:422/1000|steps: 218|ep_reward:252.98
+ 2022-05-13 01:01:21|INFO|episode:423/1000|steps: 274|ep_reward:261.78
+ 2022-05-13 01:01:28|INFO|episode:424/1000|steps: 226|ep_reward:275.18
+ 2022-05-13 01:01:35|INFO|episode:425/1000|steps: 237|ep_reward:255.25
+ 2022-05-13 01:01:41|INFO|episode:426/1000|steps: 198|ep_reward:262.28
+ 2022-05-13 01:01:47|INFO|episode:427/1000|steps: 225|ep_reward:284.35
+ 2022-05-13 01:02:00|INFO|episode:428/1000|steps: 416|ep_reward:254.64
+ 2022-05-13 01:02:09|INFO|episode:429/1000|steps: 284|ep_reward:266.83
+ 2022-05-13 01:02:16|INFO|episode:430/1000|steps: 216|ep_reward:248.23
+ 2022-05-13 01:02:22|INFO|episode:431/1000|steps: 200|ep_reward:276.91
+ 2022-05-13 01:02:29|INFO|episode:432/1000|steps: 241|ep_reward:275.5
+ 2022-05-13 01:02:35|INFO|episode:433/1000|steps: 211|ep_reward:293.11
+ 2022-05-13 01:02:43|INFO|episode:434/1000|steps: 240|ep_reward:274.8
+ 2022-05-13 01:02:49|INFO|episode:435/1000|steps: 194|ep_reward:253.22
+ 2022-05-13 01:02:57|INFO|episode:436/1000|steps: 261|ep_reward:261.2
+ 2022-05-13 01:03:04|INFO|episode:437/1000|steps: 245|ep_reward:296.96
+ 2022-05-13 01:03:11|INFO|episode:438/1000|steps: 235|ep_reward:270.85
+ 2022-05-13 01:03:18|INFO|episode:439/1000|steps: 208|ep_reward:237.89
+ 2022-05-13 01:03:25|INFO|episode:440/1000|steps: 248|ep_reward:239.99
+ 2022-05-13 01:03:34|INFO|episode:441/1000|steps: 300|ep_reward:279.54
+ 2022-05-13 01:03:45|INFO|episode:442/1000|steps: 349|ep_reward:256.7
+ 2022-05-13 01:03:48|INFO|episode:443/1000|steps:  77|ep_reward:-114.38
+ 2022-05-13 01:03:56|INFO|episode:444/1000|steps: 268|ep_reward:280.86
+ 2022-05-13 01:04:03|INFO|episode:445/1000|steps: 236|ep_reward:291.89
+ 2022-05-13 01:04:07|INFO|episode:446/1000|steps: 139|ep_reward:51.1
+ 2022-05-13 01:04:12|INFO|episode:447/1000|steps: 139|ep_reward:47.44
+ 2022-05-13 01:04:18|INFO|episode:448/1000|steps: 211|ep_reward:286.0
+ 2022-05-13 01:04:25|INFO|episode:449/1000|steps: 232|ep_reward:310.11
+ 2022-05-13 01:04:31|INFO|episode:450/1000|steps: 207|ep_reward:295.87
+ 2022-05-13 01:04:38|INFO|episode:451/1000|steps: 209|ep_reward:252.89
+ 2022-05-13 01:04:44|INFO|episode:452/1000|steps: 194|ep_reward:277.99
+ 2022-05-13 01:04:47|INFO|episode:453/1000|steps:  91|ep_reward:-176.74
+ 2022-05-13 01:04:50|INFO|episode:454/1000|steps: 110|ep_reward:-21.99
+ 2022-05-13 01:04:53|INFO|episode:455/1000|steps: 108|ep_reward:-240.67
+ 2022-05-13 01:04:56|INFO|episode:456/1000|steps:  99|ep_reward:-221.54
+ 2022-05-13 01:05:04|INFO|episode:457/1000|steps: 265|ep_reward:284.8
+ 2022-05-13 01:05:13|INFO|episode:458/1000|steps: 269|ep_reward:257.84
+ 2022-05-13 01:05:21|INFO|episode:459/1000|steps: 266|ep_reward:291.2
+ 2022-05-13 01:05:27|INFO|episode:460/1000|steps: 188|ep_reward:264.01
+ 2022-05-13 01:05:34|INFO|episode:461/1000|steps: 225|ep_reward:284.06
+ 2022-05-13 01:05:45|INFO|episode:462/1000|steps: 380|ep_reward:286.09
+ 2022-05-13 01:05:51|INFO|episode:463/1000|steps: 195|ep_reward:292.42
+ 2022-05-13 01:05:58|INFO|episode:464/1000|steps: 208|ep_reward:245.15
+ 2022-05-13 01:06:07|INFO|episode:465/1000|steps: 291|ep_reward:296.11
+ 2022-05-13 01:06:14|INFO|episode:466/1000|steps: 223|ep_reward:258.48
+ 2022-05-13 01:06:23|INFO|episode:467/1000|steps: 301|ep_reward:293.32
+ 2022-05-13 01:06:30|INFO|episode:468/1000|steps: 233|ep_reward:299.5
+ 2022-05-13 01:06:38|INFO|episode:469/1000|steps: 241|ep_reward:291.07
+ 2022-05-13 01:06:45|INFO|episode:470/1000|steps: 218|ep_reward:265.04
+ 2022-05-13 01:06:54|INFO|episode:471/1000|steps: 274|ep_reward:268.02
+ 2022-05-13 01:07:01|INFO|episode:472/1000|steps: 206|ep_reward:259.73
+ 2022-05-13 01:07:08|INFO|episode:473/1000|steps: 204|ep_reward:257.37
+ 2022-05-13 01:07:14|INFO|episode:474/1000|steps: 204|ep_reward:281.78
+ 2022-05-13 01:07:21|INFO|episode:475/1000|steps: 237|ep_reward:299.02
+ 2022-05-13 01:07:31|INFO|episode:476/1000|steps: 318|ep_reward:296.53
+ 2022-05-13 01:07:38|INFO|episode:477/1000|steps: 220|ep_reward:265.62
+ 2022-05-13 01:07:44|INFO|episode:478/1000|steps: 218|ep_reward:263.18
+ 2022-05-13 01:07:51|INFO|episode:479/1000|steps: 232|ep_reward:259.53
+ 2022-05-13 01:08:01|INFO|episode:480/1000|steps: 315|ep_reward:273.79
+ 2022-05-13 01:08:08|INFO|episode:481/1000|steps: 214|ep_reward:286.34
+ 2022-05-13 01:08:23|INFO|episode:482/1000|steps: 502|ep_reward:225.18
+ 2022-05-13 01:08:31|INFO|episode:483/1000|steps: 258|ep_reward:262.47
+ 2022-05-13 01:08:34|INFO|episode:484/1000|steps: 108|ep_reward:-303.79
+ 2022-05-13 01:08:40|INFO|episode:485/1000|steps: 203|ep_reward:260.32
+ 2022-05-13 01:08:46|INFO|episode:486/1000|steps: 220|ep_reward:302.02
+ 2022-05-13 01:08:54|INFO|episode:487/1000|steps: 275|ep_reward:288.67
+ 2022-05-13 01:09:04|INFO|episode:488/1000|steps: 332|ep_reward:284.44
+ 2022-05-13 01:09:11|INFO|episode:489/1000|steps: 249|ep_reward:263.08
+ 2022-05-13 01:09:18|INFO|episode:490/1000|steps: 239|ep_reward:242.53
+ 2022-05-13 01:09:24|INFO|episode:491/1000|steps: 209|ep_reward:248.19
+ 2022-05-13 01:09:31|INFO|episode:492/1000|steps: 206|ep_reward:262.13
+ 2022-05-13 01:09:36|INFO|episode:493/1000|steps: 185|ep_reward:273.79
+ 2022-05-13 01:09:44|INFO|episode:494/1000|steps: 253|ep_reward:292.45
+ 2022-05-13 01:09:52|INFO|episode:495/1000|steps: 264|ep_reward:285.33
+ 2022-05-13 01:10:11|INFO|episode:496/1000|steps: 600|ep_reward:219.75
+ 2022-05-13 01:10:19|INFO|episode:497/1000|steps: 251|ep_reward:251.16
+ 2022-05-13 01:10:26|INFO|episode:498/1000|steps: 246|ep_reward:247.2
+ 2022-05-13 01:10:34|INFO|episode:499/1000|steps: 271|ep_reward:298.66
+ 2022-05-13 01:10:42|INFO|episode:500/1000|steps: 243|ep_reward:303.79
+ 2022-05-13 01:10:47|INFO|episode:501/1000|steps: 185|ep_reward:287.63
+ 2022-05-13 01:10:54|INFO|episode:502/1000|steps: 223|ep_reward:296.93
+ 2022-05-13 01:11:02|INFO|episode:503/1000|steps: 268|ep_reward:275.13
+ 2022-05-13 01:11:11|INFO|episode:504/1000|steps: 292|ep_reward:282.89
+ 2022-05-13 01:11:18|INFO|episode:505/1000|steps: 212|ep_reward:298.98
+ 2022-05-13 01:11:24|INFO|episode:506/1000|steps: 191|ep_reward:271.49
+ 2022-05-13 01:11:31|INFO|episode:507/1000|steps: 233|ep_reward:279.36
+ 2022-05-13 01:11:38|INFO|episode:508/1000|steps: 225|ep_reward:286.69
+ 2022-05-13 01:11:46|INFO|episode:509/1000|steps: 271|ep_reward:301.25
+ 2022-05-13 01:11:52|INFO|episode:510/1000|steps: 199|ep_reward:254.68
+ 2022-05-13 01:11:59|INFO|episode:511/1000|steps: 230|ep_reward:294.22
+ 2022-05-13 01:12:05|INFO|episode:512/1000|steps: 208|ep_reward:267.15
+ 2022-05-13 01:12:12|INFO|episode:513/1000|steps: 204|ep_reward:270.29
+ 2022-05-13 01:12:18|INFO|episode:514/1000|steps: 204|ep_reward:265.75
+ 2022-05-13 01:12:29|INFO|episode:515/1000|steps: 318|ep_reward:290.67
+ 2022-05-13 01:12:36|INFO|episode:516/1000|steps: 210|ep_reward:308.16
+ 2022-05-13 01:12:46|INFO|episode:517/1000|steps: 287|ep_reward:271.08
+ 2022-05-13 01:12:54|INFO|episode:518/1000|steps: 242|ep_reward:269.77
+ 2022-05-13 01:13:01|INFO|episode:519/1000|steps: 191|ep_reward:274.96
+ 2022-05-13 01:13:07|INFO|episode:520/1000|steps: 192|ep_reward:312.44
+ 2022-05-13 01:13:15|INFO|episode:521/1000|steps: 228|ep_reward:241.05
+ 2022-05-13 01:13:23|INFO|episode:522/1000|steps: 242|ep_reward:261.39
+ 2022-05-13 01:13:31|INFO|episode:523/1000|steps: 269|ep_reward:261.91
+ 2022-05-13 01:13:38|INFO|episode:524/1000|steps: 226|ep_reward:264.87
+ 2022-05-13 01:13:44|INFO|episode:525/1000|steps: 196|ep_reward:283.57
+ 2022-05-13 01:13:51|INFO|episode:526/1000|steps: 230|ep_reward:303.92
+ 2022-05-13 01:13:59|INFO|episode:527/1000|steps: 240|ep_reward:301.68
+ 2022-05-13 01:14:05|INFO|episode:528/1000|steps: 208|ep_reward:262.17
+ 2022-05-13 01:14:11|INFO|episode:529/1000|steps: 196|ep_reward:256.06
+ 2022-05-13 01:14:17|INFO|episode:530/1000|steps: 187|ep_reward:268.35
+ 2022-05-13 01:14:23|INFO|episode:531/1000|steps: 193|ep_reward:310.78
+ 2022-05-13 01:14:29|INFO|episode:532/1000|steps: 205|ep_reward:278.09
+ 2022-05-13 01:14:34|INFO|episode:533/1000|steps: 179|ep_reward:272.82
+ 2022-05-13 01:14:42|INFO|episode:534/1000|steps: 237|ep_reward:275.84
+ 2022-05-13 01:14:48|INFO|episode:535/1000|steps: 220|ep_reward:304.19
+ 2022-05-13 01:14:52|INFO|episode:536/1000|steps: 113|ep_reward:63.08
+ 2022-05-13 01:14:58|INFO|episode:537/1000|steps: 220|ep_reward:277.74
+ 2022-05-13 01:15:05|INFO|episode:538/1000|steps: 209|ep_reward:271.53
+ 2022-05-13 01:15:11|INFO|episode:539/1000|steps: 219|ep_reward:293.84
+ 2022-05-13 01:15:17|INFO|episode:540/1000|steps: 176|ep_reward:270.15
+ 2022-05-13 01:15:23|INFO|episode:541/1000|steps: 189|ep_reward:260.57
+ 2022-05-13 01:15:29|INFO|episode:542/1000|steps: 220|ep_reward:279.06
+ 2022-05-13 01:15:37|INFO|episode:543/1000|steps: 243|ep_reward:257.1
+ 2022-05-13 01:15:45|INFO|episode:544/1000|steps: 263|ep_reward:304.57
+ 2022-05-13 01:15:49|INFO|episode:545/1000|steps: 120|ep_reward:-124.31
+ 2022-05-13 01:15:55|INFO|episode:546/1000|steps: 206|ep_reward:258.51
+ 2022-05-13 01:16:02|INFO|episode:547/1000|steps: 224|ep_reward:282.0
+ 2022-05-13 01:16:09|INFO|episode:548/1000|steps: 243|ep_reward:277.85
+ 2022-05-13 01:16:16|INFO|episode:549/1000|steps: 214|ep_reward:260.21
+ 2022-05-13 01:16:22|INFO|episode:550/1000|steps: 215|ep_reward:319.81
+ 2022-05-13 01:16:28|INFO|episode:551/1000|steps: 200|ep_reward:264.0
+ 2022-05-13 01:16:36|INFO|episode:552/1000|steps: 241|ep_reward:291.06
+ 2022-05-13 01:16:42|INFO|episode:553/1000|steps: 205|ep_reward:258.79
+ 2022-05-13 01:16:47|INFO|episode:554/1000|steps: 185|ep_reward:260.51
+ 2022-05-13 01:16:53|INFO|episode:555/1000|steps: 181|ep_reward:288.25
+ 2022-05-13 01:16:53|INFO|Save best model. 前100幕的平均reward为259.26.
+ 2022-05-13 01:16:59|INFO|episode:556/1000|steps: 202|ep_reward:306.19
+ 2022-05-13 01:16:59|INFO|Save best model. 前100幕的平均reward为264.54.
+ 2022-05-13 01:17:05|INFO|episode:557/1000|steps: 182|ep_reward:297.69
+ 2022-05-13 01:17:05|INFO|Save best model. 前100幕的平均reward为264.67.
+ 2022-05-13 01:17:18|INFO|episode:558/1000|steps: 368|ep_reward:213.12
+ 2022-05-13 01:17:33|INFO|episode:559/1000|steps: 408|ep_reward:270.92
+ 2022-05-13 01:17:41|INFO|episode:560/1000|steps: 240|ep_reward:280.87
+ 2022-05-13 01:17:48|INFO|episode:561/1000|steps: 206|ep_reward:242.74
+ 2022-05-13 01:17:56|INFO|episode:562/1000|steps: 252|ep_reward:299.42
+ 2022-05-13 01:18:04|INFO|episode:563/1000|steps: 221|ep_reward:297.74
+ 2022-05-13 01:18:13|INFO|episode:564/1000|steps: 262|ep_reward:291.88
+ 2022-05-13 01:18:20|INFO|episode:565/1000|steps: 222|ep_reward:285.89
+ 2022-05-13 01:18:27|INFO|episode:566/1000|steps: 216|ep_reward:284.99
+ 2022-05-13 01:18:33|INFO|episode:567/1000|steps: 163|ep_reward:44.55
+ 2022-05-13 01:18:40|INFO|episode:568/1000|steps: 215|ep_reward:258.65
+ 2022-05-13 01:18:45|INFO|episode:569/1000|steps: 136|ep_reward:47.16
+ 2022-05-13 01:18:51|INFO|episode:570/1000|steps: 196|ep_reward:280.14
+ 2022-05-13 01:18:57|INFO|episode:571/1000|steps: 202|ep_reward:310.91
+ 2022-05-13 01:19:03|INFO|episode:572/1000|steps: 197|ep_reward:252.3
+ 2022-05-13 01:19:10|INFO|episode:573/1000|steps: 223|ep_reward:277.32
+ 2022-05-13 01:19:17|INFO|episode:574/1000|steps: 218|ep_reward:299.15
+ 2022-05-13 01:19:25|INFO|episode:575/1000|steps: 278|ep_reward:269.56
+ 2022-05-13 01:19:31|INFO|episode:576/1000|steps: 195|ep_reward:266.49
+ 2022-05-13 01:19:39|INFO|episode:577/1000|steps: 264|ep_reward:316.07
+ 2022-05-13 01:19:46|INFO|episode:578/1000|steps: 206|ep_reward:277.96
+ 2022-05-13 01:19:51|INFO|episode:579/1000|steps: 192|ep_reward:251.75
+ 2022-05-13 01:19:57|INFO|episode:580/1000|steps: 193|ep_reward:301.41
+ 2022-05-13 01:20:04|INFO|episode:581/1000|steps: 226|ep_reward:276.25
+ 2022-05-13 01:20:11|INFO|episode:582/1000|steps: 218|ep_reward:291.73
+ 2022-05-13 01:20:18|INFO|episode:583/1000|steps: 214|ep_reward:241.92
+ 2022-05-13 01:20:26|INFO|episode:584/1000|steps: 248|ep_reward:280.9
+ 2022-05-13 01:20:26|INFO|Save best model. 前100幕的平均reward为266.6.
+ 2022-05-13 01:20:34|INFO|episode:585/1000|steps: 215|ep_reward:251.8
+ 2022-05-13 01:20:41|INFO|episode:586/1000|steps: 226|ep_reward:255.48
+ 2022-05-13 01:20:50|INFO|episode:587/1000|steps: 270|ep_reward:273.65
+ 2022-05-13 01:21:02|INFO|episode:588/1000|steps: 326|ep_reward:280.27
+ 2022-05-13 01:21:09|INFO|episode:589/1000|steps: 213|ep_reward:265.52
+ 2022-05-13 01:21:17|INFO|episode:590/1000|steps: 267|ep_reward:267.48
+ 2022-05-13 01:21:24|INFO|episode:591/1000|steps: 226|ep_reward:288.67
+ 2022-05-13 01:21:30|INFO|episode:592/1000|steps: 209|ep_reward:264.58
+ 2022-05-13 01:21:36|INFO|episode:593/1000|steps: 195|ep_reward:271.45
+ 2022-05-13 01:21:43|INFO|episode:594/1000|steps: 228|ep_reward:281.66
+ 2022-05-13 01:21:57|INFO|episode:595/1000|steps: 433|ep_reward:284.4
+ 2022-05-13 01:22:07|INFO|episode:596/1000|steps: 333|ep_reward:250.74
+ 2022-05-13 01:22:07|INFO|Save best model. 前100幕的平均reward为266.73.
+ 2022-05-13 01:22:13|INFO|episode:597/1000|steps: 198|ep_reward:300.95
+ 2022-05-13 01:22:13|INFO|Save best model. 前100幕的平均reward为267.22.
+ 2022-05-13 01:22:20|INFO|episode:598/1000|steps: 212|ep_reward:294.2
+ 2022-05-13 01:22:20|INFO|Save best model. 前100幕的平均reward为267.69.
+ 2022-05-13 01:22:26|INFO|episode:599/1000|steps: 203|ep_reward:289.69
+ 2022-05-13 01:22:35|INFO|episode:600/1000|steps: 282|ep_reward:239.06
+ 2022-05-13 01:22:45|INFO|episode:601/1000|steps: 326|ep_reward:261.59
+ 2022-05-13 01:22:56|INFO|episode:602/1000|steps: 362|ep_reward:279.4
+ 2022-05-13 01:23:04|INFO|episode:603/1000|steps: 257|ep_reward:250.67
+ 2022-05-13 01:23:12|INFO|episode:604/1000|steps: 255|ep_reward:231.52
+ 2022-05-13 01:23:20|INFO|episode:605/1000|steps: 270|ep_reward:274.68
+ 2022-05-13 01:23:27|INFO|episode:606/1000|steps: 222|ep_reward:240.72
+ 2022-05-13 01:23:35|INFO|episode:607/1000|steps: 278|ep_reward:277.84
+ 2022-05-13 01:23:49|INFO|episode:608/1000|steps: 445|ep_reward:197.86
+ 2022-05-13 01:23:57|INFO|episode:609/1000|steps: 257|ep_reward:272.03
+ 2022-05-13 01:24:05|INFO|episode:610/1000|steps: 274|ep_reward:281.07
+ 2022-05-13 01:24:12|INFO|episode:611/1000|steps: 238|ep_reward:279.04
+ 2022-05-13 01:24:19|INFO|episode:612/1000|steps: 226|ep_reward:275.26
+ 2022-05-13 01:24:30|INFO|episode:613/1000|steps: 334|ep_reward:221.06
+ 2022-05-13 01:24:32|INFO|episode:614/1000|steps:  70|ep_reward:-154.6
+ 2022-05-13 01:24:42|INFO|episode:615/1000|steps: 326|ep_reward:293.12
+ 2022-05-13 01:24:49|INFO|episode:616/1000|steps: 227|ep_reward:269.15
+ 2022-05-13 01:24:56|INFO|episode:617/1000|steps: 236|ep_reward:266.44
+ 2022-05-13 01:25:03|INFO|episode:618/1000|steps: 196|ep_reward:259.84
+ 2022-05-13 01:25:11|INFO|episode:619/1000|steps: 277|ep_reward:304.09
+ 2022-05-13 01:25:20|INFO|episode:620/1000|steps: 281|ep_reward:294.82
+ 2022-05-13 01:25:26|INFO|episode:621/1000|steps: 202|ep_reward:273.28
+ 2022-05-13 01:25:32|INFO|episode:622/1000|steps: 198|ep_reward:288.14
+ 2022-05-13 01:25:39|INFO|episode:623/1000|steps: 222|ep_reward:266.2
+ 2022-05-13 01:25:46|INFO|episode:624/1000|steps: 220|ep_reward:291.63
+ 2022-05-13 01:25:52|INFO|episode:625/1000|steps: 213|ep_reward:301.72
+ 2022-05-13 01:25:58|INFO|episode:626/1000|steps: 197|ep_reward:257.84
+ 2022-05-13 01:26:06|INFO|episode:627/1000|steps: 244|ep_reward:244.44
+ 2022-05-13 01:26:13|INFO|episode:628/1000|steps: 248|ep_reward:259.39
+ 2022-05-13 01:26:20|INFO|episode:629/1000|steps: 206|ep_reward:284.38
+ 2022-05-13 01:26:27|INFO|episode:630/1000|steps: 244|ep_reward:268.11
+ 2022-05-13 01:26:35|INFO|episode:631/1000|steps: 257|ep_reward:242.38
+ 2022-05-13 01:26:42|INFO|episode:632/1000|steps: 222|ep_reward:264.68
+ 2022-05-13 01:26:49|INFO|episode:633/1000|steps: 225|ep_reward:304.49
+ 2022-05-13 01:26:58|INFO|episode:634/1000|steps: 288|ep_reward:262.55
+ 2022-05-13 01:27:06|INFO|episode:635/1000|steps: 287|ep_reward:280.83
+ 2022-05-13 01:27:13|INFO|episode:636/1000|steps: 242|ep_reward:278.15
+ 2022-05-13 01:27:20|INFO|episode:637/1000|steps: 243|ep_reward:265.82
+ 2022-05-13 01:27:27|INFO|episode:638/1000|steps: 242|ep_reward:275.65
+ 2022-05-13 01:27:33|INFO|episode:639/1000|steps: 225|ep_reward:266.15
+ 2022-05-13 01:27:41|INFO|episode:640/1000|steps: 282|ep_reward:295.43
+ 2022-05-13 01:27:47|INFO|episode:641/1000|steps: 205|ep_reward:271.69
+ 2022-05-13 01:27:53|INFO|episode:642/1000|steps: 211|ep_reward:263.63
+ 2022-05-13 01:28:01|INFO|episode:643/1000|steps: 273|ep_reward:269.25
+ 2022-05-13 01:28:08|INFO|episode:644/1000|steps: 232|ep_reward:244.33
+ 2022-05-13 01:28:16|INFO|episode:645/1000|steps: 268|ep_reward:295.17
+ 2022-05-13 01:28:23|INFO|episode:646/1000|steps: 226|ep_reward:314.63
+ 2022-05-13 01:28:29|INFO|episode:647/1000|steps: 225|ep_reward:300.28
+ 2022-05-13 01:28:35|INFO|episode:648/1000|steps: 219|ep_reward:242.33
+ 2022-05-13 01:28:42|INFO|episode:649/1000|steps: 221|ep_reward:308.81
+ 2022-05-13 01:28:51|INFO|episode:650/1000|steps: 322|ep_reward:273.65
+ 2022-05-13 01:28:58|INFO|episode:651/1000|steps: 233|ep_reward:286.76
+ 2022-05-13 01:29:11|INFO|episode:652/1000|steps: 423|ep_reward:249.27
+ 2022-05-13 01:29:18|INFO|episode:653/1000|steps: 247|ep_reward:277.87
+ 2022-05-13 01:29:28|INFO|episode:654/1000|steps: 316|ep_reward:272.93
+ 2022-05-13 01:29:31|INFO|episode:655/1000|steps:  92|ep_reward:-367.33
+ 2022-05-13 01:29:39|INFO|episode:656/1000|steps: 261|ep_reward:279.41
+ 2022-05-13 01:29:45|INFO|episode:657/1000|steps: 214|ep_reward:245.94
+ 2022-05-13 01:29:53|INFO|episode:658/1000|steps: 255|ep_reward:274.56
+ 2022-05-13 01:30:00|INFO|episode:659/1000|steps: 216|ep_reward:307.41
+ 2022-05-13 01:30:09|INFO|episode:660/1000|steps: 271|ep_reward:276.48
+ 2022-05-13 01:30:18|INFO|episode:661/1000|steps: 293|ep_reward:297.83
+ 2022-05-13 01:30:25|INFO|episode:662/1000|steps: 212|ep_reward:275.63
+ 2022-05-13 01:30:32|INFO|episode:663/1000|steps: 236|ep_reward:280.43
+ 2022-05-13 01:30:39|INFO|episode:664/1000|steps: 235|ep_reward:299.49
+ 2022-05-13 01:30:48|INFO|episode:665/1000|steps: 290|ep_reward:283.56
+ 2022-05-13 01:30:55|INFO|episode:666/1000|steps: 252|ep_reward:272.66
+ 2022-05-13 01:31:02|INFO|episode:667/1000|steps: 219|ep_reward:300.3
+ 2022-05-13 01:31:10|INFO|episode:668/1000|steps: 267|ep_reward:242.53
+ 2022-05-13 01:31:20|INFO|episode:669/1000|steps: 332|ep_reward:259.42
+ 2022-05-13 01:31:28|INFO|episode:670/1000|steps: 292|ep_reward:283.72
+ 2022-05-13 01:31:37|INFO|episode:671/1000|steps: 284|ep_reward:275.92
+ 2022-05-13 01:31:49|INFO|episode:672/1000|steps: 374|ep_reward:263.68
+ 2022-05-13 01:31:56|INFO|episode:673/1000|steps: 244|ep_reward:262.24
+ 2022-05-13 01:32:03|INFO|episode:674/1000|steps: 226|ep_reward:289.57
+ 2022-05-13 01:32:10|INFO|episode:675/1000|steps: 231|ep_reward:261.85
+ 2022-05-13 01:32:19|INFO|episode:676/1000|steps: 296|ep_reward:284.61
+ 2022-05-13 01:32:26|INFO|episode:677/1000|steps: 228|ep_reward:281.11
+ 2022-05-13 01:32:35|INFO|episode:678/1000|steps: 282|ep_reward:296.35
+ 2022-05-13 01:32:41|INFO|episode:679/1000|steps: 220|ep_reward:245.91
+ 2022-05-13 01:32:47|INFO|episode:680/1000|steps: 176|ep_reward:39.79
+ 2022-05-13 01:32:51|INFO|episode:681/1000|steps: 132|ep_reward:54.87
+ 2022-05-13 01:32:58|INFO|episode:682/1000|steps: 230|ep_reward:305.98
+ 2022-05-13 01:33:05|INFO|episode:683/1000|steps: 232|ep_reward:305.89
+ 2022-05-13 01:33:11|INFO|episode:684/1000|steps: 192|ep_reward:251.78
+ 2022-05-13 01:33:17|INFO|episode:685/1000|steps: 199|ep_reward:240.3
+ 2022-05-13 01:33:23|INFO|episode:686/1000|steps: 204|ep_reward:262.01
+ 2022-05-13 01:33:32|INFO|episode:687/1000|steps: 301|ep_reward:314.84
+ 2022-05-13 01:33:40|INFO|episode:688/1000|steps: 246|ep_reward:292.49
+ 2022-05-13 01:33:47|INFO|episode:689/1000|steps: 232|ep_reward:253.42
+ 2022-05-13 01:33:54|INFO|episode:690/1000|steps: 234|ep_reward:287.03
+ 2022-05-13 01:34:02|INFO|episode:691/1000|steps: 253|ep_reward:275.47
+ 2022-05-13 01:34:09|INFO|episode:692/1000|steps: 238|ep_reward:230.04
+ 2022-05-13 01:34:17|INFO|episode:693/1000|steps: 253|ep_reward:250.96
+ 2022-05-13 01:34:25|INFO|episode:694/1000|steps: 267|ep_reward:294.09
+ 2022-05-13 01:34:32|INFO|episode:695/1000|steps: 237|ep_reward:256.74
+ 2022-05-13 01:34:40|INFO|episode:696/1000|steps: 251|ep_reward:266.5
+ 2022-05-13 01:34:50|INFO|episode:697/1000|steps: 317|ep_reward:266.97
+ 2022-05-13 01:34:56|INFO|episode:698/1000|steps: 206|ep_reward:284.66
+ 2022-05-13 01:35:04|INFO|episode:699/1000|steps: 257|ep_reward:295.8
+ 2022-05-13 01:35:08|INFO|episode:700/1000|steps: 144|ep_reward:74.44
+ 2022-05-13 01:35:14|INFO|episode:701/1000|steps: 179|ep_reward:283.6
+ 2022-05-13 01:35:20|INFO|episode:702/1000|steps: 215|ep_reward:296.49
+ 2022-05-13 01:35:26|INFO|episode:703/1000|steps: 177|ep_reward:255.17
+ 2022-05-13 01:35:32|INFO|episode:704/1000|steps: 215|ep_reward:261.04
+ 2022-05-13 01:35:38|INFO|episode:705/1000|steps: 191|ep_reward:276.53
+ 2022-05-13 01:35:46|INFO|episode:706/1000|steps: 264|ep_reward:298.05
+ 2022-05-13 01:35:53|INFO|episode:707/1000|steps: 217|ep_reward:251.72
+ 2022-05-13 01:36:00|INFO|episode:708/1000|steps: 220|ep_reward:268.12
+ 2022-05-13 01:36:06|INFO|episode:709/1000|steps: 204|ep_reward:283.08
+ 2022-05-13 01:36:12|INFO|episode:710/1000|steps: 222|ep_reward:278.49
+ 2022-05-13 01:36:19|INFO|episode:711/1000|steps: 200|ep_reward:301.88
+ 2022-05-13 01:36:26|INFO|episode:712/1000|steps: 235|ep_reward:289.74
+ 2022-05-13 01:36:33|INFO|episode:713/1000|steps: 243|ep_reward:261.72
+ 2022-05-13 01:36:42|INFO|episode:714/1000|steps: 280|ep_reward:288.53
+ 2022-05-13 01:36:50|INFO|episode:715/1000|steps: 268|ep_reward:280.9
+ 2022-05-13 01:36:58|INFO|episode:716/1000|steps: 252|ep_reward:267.22
+ 2022-05-13 01:37:04|INFO|episode:717/1000|steps: 188|ep_reward:252.69
+ 2022-05-13 01:37:10|INFO|episode:718/1000|steps: 207|ep_reward:315.54
+ 2022-05-13 01:37:19|INFO|episode:719/1000|steps: 292|ep_reward:280.15
+ 2022-05-13 01:37:28|INFO|episode:720/1000|steps: 286|ep_reward:273.84
+ 2022-05-13 01:37:34|INFO|episode:721/1000|steps: 221|ep_reward:275.78
+ 2022-05-13 01:37:42|INFO|episode:722/1000|steps: 242|ep_reward:302.17
+ 2022-05-13 01:37:49|INFO|episode:723/1000|steps: 239|ep_reward:281.59
+ 2022-05-13 01:37:56|INFO|episode:724/1000|steps: 225|ep_reward:238.28
+ 2022-05-13 01:38:04|INFO|episode:725/1000|steps: 277|ep_reward:264.81
+ 2022-05-13 01:38:12|INFO|episode:726/1000|steps: 256|ep_reward:266.27
+ 2022-05-13 01:38:18|INFO|episode:727/1000|steps: 235|ep_reward:296.0
+ 2022-05-13 01:38:25|INFO|episode:728/1000|steps: 243|ep_reward:298.98
+ 2022-05-13 01:38:31|INFO|episode:729/1000|steps: 205|ep_reward:265.94
+ 2022-05-13 01:38:39|INFO|episode:730/1000|steps: 251|ep_reward:262.7
+ 2022-05-13 01:38:45|INFO|episode:731/1000|steps: 232|ep_reward:273.89
+ 2022-05-13 01:38:52|INFO|episode:732/1000|steps: 226|ep_reward:299.37
+ 2022-05-13 01:38:58|INFO|episode:733/1000|steps: 193|ep_reward:244.31
+ 2022-05-13 01:39:05|INFO|episode:734/1000|steps: 238|ep_reward:234.05
+ 2022-05-13 01:39:13|INFO|episode:735/1000|steps: 255|ep_reward:286.8
+ 2022-05-13 01:39:21|INFO|episode:736/1000|steps: 260|ep_reward:287.76
+ 2022-05-13 01:39:27|INFO|episode:737/1000|steps: 218|ep_reward:243.02
+ 2022-05-13 01:39:35|INFO|episode:738/1000|steps: 249|ep_reward:303.34
+ 2022-05-13 01:39:42|INFO|episode:739/1000|steps: 242|ep_reward:282.12
+ 2022-05-13 01:39:48|INFO|episode:740/1000|steps: 198|ep_reward:291.2
+ 2022-05-13 01:39:55|INFO|episode:741/1000|steps: 223|ep_reward:285.14
+ 2022-05-13 01:40:02|INFO|episode:742/1000|steps: 225|ep_reward:267.05
+ 2022-05-13 01:40:09|INFO|episode:743/1000|steps: 232|ep_reward:307.9
+ 2022-05-13 01:40:20|INFO|episode:744/1000|steps: 344|ep_reward:256.0
+ 2022-05-13 01:40:28|INFO|episode:745/1000|steps: 277|ep_reward:289.04
+ 2022-05-13 01:40:36|INFO|episode:746/1000|steps: 256|ep_reward:293.56
+ 2022-05-13 01:40:43|INFO|episode:747/1000|steps: 210|ep_reward:272.01
+ 2022-05-13 01:40:50|INFO|episode:748/1000|steps: 234|ep_reward:281.47
+ 2022-05-13 01:40:56|INFO|episode:749/1000|steps: 197|ep_reward:252.7
+ 2022-05-13 01:41:02|INFO|episode:750/1000|steps: 212|ep_reward:255.34
+ 2022-05-13 01:41:08|INFO|episode:751/1000|steps: 177|ep_reward:256.17
+ 2022-05-13 01:41:15|INFO|episode:752/1000|steps: 239|ep_reward:289.21
+ 2022-05-13 01:41:21|INFO|episode:753/1000|steps: 176|ep_reward:284.1
+ 2022-05-13 01:41:26|INFO|episode:754/1000|steps: 187|ep_reward:273.87
+ 2022-05-13 01:41:33|INFO|episode:755/1000|steps: 208|ep_reward:237.18
+ 2022-05-13 01:41:33|INFO|Save best model. 前100幕的平均reward为269.08.
+ 2022-05-13 01:41:39|INFO|episode:756/1000|steps: 225|ep_reward:293.03
+ 2022-05-13 01:41:40|INFO|Save best model. 前100幕的平均reward为269.22.
+ 2022-05-13 01:41:46|INFO|episode:757/1000|steps: 208|ep_reward:265.52
+ 2022-05-13 01:41:46|INFO|Save best model. 前100幕的平均reward为269.42.
+ 2022-05-13 01:41:52|INFO|episode:758/1000|steps: 194|ep_reward:252.91
+ 2022-05-13 01:42:01|INFO|episode:759/1000|steps: 304|ep_reward:286.33
+ 2022-05-13 01:42:08|INFO|episode:760/1000|steps: 231|ep_reward:259.72
+ 2022-05-13 01:42:14|INFO|episode:761/1000|steps: 198|ep_reward:284.44
+ 2022-05-13 01:42:21|INFO|episode:762/1000|steps: 222|ep_reward:268.68
+ 2022-05-13 01:42:25|INFO|episode:763/1000|steps: 116|ep_reward:61.24
+ 2022-05-13 01:42:31|INFO|episode:764/1000|steps: 193|ep_reward:256.36
+ 2022-05-13 01:42:37|INFO|episode:765/1000|steps: 205|ep_reward:279.2
+ 2022-05-13 01:42:44|INFO|episode:766/1000|steps: 230|ep_reward:265.04
+ 2022-05-13 01:42:48|INFO|episode:767/1000|steps: 141|ep_reward:28.49
+ 2022-05-13 01:42:51|INFO|episode:768/1000|steps: 110|ep_reward:81.55
+ 2022-05-13 01:43:02|INFO|episode:769/1000|steps: 329|ep_reward:283.65
+ 2022-05-13 01:43:08|INFO|episode:770/1000|steps: 216|ep_reward:251.31
+ 2022-05-13 01:43:16|INFO|episode:771/1000|steps: 260|ep_reward:282.75
+ 2022-05-13 01:43:22|INFO|episode:772/1000|steps: 224|ep_reward:299.24
+ 2022-05-13 01:43:28|INFO|episode:773/1000|steps: 193|ep_reward:247.06
+ 2022-05-13 01:43:35|INFO|episode:774/1000|steps: 237|ep_reward:270.77
+ 2022-05-13 01:43:46|INFO|episode:775/1000|steps: 344|ep_reward:290.08
+ 2022-05-13 01:43:53|INFO|episode:776/1000|steps: 233|ep_reward:247.03
+ 2022-05-13 01:44:00|INFO|episode:777/1000|steps: 231|ep_reward:278.09
+ 2022-05-13 01:44:06|INFO|episode:778/1000|steps: 212|ep_reward:298.85
+ 2022-05-13 01:44:13|INFO|episode:779/1000|steps: 214|ep_reward:300.66
+ 2022-05-13 01:44:20|INFO|episode:780/1000|steps: 223|ep_reward:291.31
+ 2022-05-13 01:44:26|INFO|episode:781/1000|steps: 215|ep_reward:259.55
+ 2022-05-13 01:44:33|INFO|episode:782/1000|steps: 203|ep_reward:280.56
+ 2022-05-13 01:44:40|INFO|episode:783/1000|steps: 213|ep_reward:239.77
+ 2022-05-13 01:44:47|INFO|episode:784/1000|steps: 247|ep_reward:232.88
+ 2022-05-13 01:44:53|INFO|episode:785/1000|steps: 196|ep_reward:264.59
+ 2022-05-13 01:45:00|INFO|episode:786/1000|steps: 222|ep_reward:288.08
+ 2022-05-13 01:45:07|INFO|episode:787/1000|steps: 230|ep_reward:280.16
+ 2022-05-13 01:45:14|INFO|episode:788/1000|steps: 217|ep_reward:270.29
+ 2022-05-13 01:45:22|INFO|episode:789/1000|steps: 232|ep_reward:262.12
+ 2022-05-13 01:45:29|INFO|episode:790/1000|steps: 238|ep_reward:313.84
+ 2022-05-13 01:45:38|INFO|episode:791/1000|steps: 281|ep_reward:264.18
+ 2022-05-13 01:45:45|INFO|episode:792/1000|steps: 224|ep_reward:315.17
+ 2022-05-13 01:45:52|INFO|episode:793/1000|steps: 259|ep_reward:256.46
+ 2022-05-13 01:46:00|INFO|episode:794/1000|steps: 233|ep_reward:280.42
+ 2022-05-13 01:46:06|INFO|episode:795/1000|steps: 221|ep_reward:275.1
+ 2022-05-13 01:46:14|INFO|episode:796/1000|steps: 242|ep_reward:274.14
+ 2022-05-13 01:46:22|INFO|episode:797/1000|steps: 233|ep_reward:299.25
+ 2022-05-13 01:46:31|INFO|episode:798/1000|steps: 267|ep_reward:277.01
+ 2022-05-13 01:46:38|INFO|episode:799/1000|steps: 230|ep_reward:277.5
+ 2022-05-13 01:46:47|INFO|episode:800/1000|steps: 291|ep_reward:240.34
+ 2022-05-13 01:46:53|INFO|episode:801/1000|steps: 235|ep_reward:293.07
+ 2022-05-13 01:47:01|INFO|episode:802/1000|steps: 265|ep_reward:297.46
+ 2022-05-13 01:47:10|INFO|episode:803/1000|steps: 284|ep_reward:285.39
+ 2022-05-13 01:47:16|INFO|episode:804/1000|steps: 222|ep_reward:282.51
+ 2022-05-13 01:47:23|INFO|episode:805/1000|steps: 249|ep_reward:303.21
+ 2022-05-13 01:47:31|INFO|episode:806/1000|steps: 238|ep_reward:284.51
+ 2022-05-13 01:47:41|INFO|episode:807/1000|steps: 339|ep_reward:304.57
+ 2022-05-13 01:47:41|INFO|Save best model. 前100幕的平均reward为269.66.
+ 2022-05-13 01:47:49|INFO|episode:808/1000|steps: 254|ep_reward:258.2
+ 2022-05-13 01:47:56|INFO|episode:809/1000|steps: 218|ep_reward:253.38
+ 2022-05-13 01:48:06|INFO|episode:810/1000|steps: 340|ep_reward:266.0
+ 2022-05-13 01:48:15|INFO|episode:811/1000|steps: 279|ep_reward:307.06
+ 2022-05-13 01:48:22|INFO|episode:812/1000|steps: 223|ep_reward:309.36
+ 2022-05-13 01:48:29|INFO|episode:813/1000|steps: 257|ep_reward:305.46
+ 2022-05-13 01:48:29|INFO|Save best model. 前100幕的平均reward为269.83.
+ 2022-05-13 01:48:38|INFO|episode:814/1000|steps: 281|ep_reward:312.03
+ 2022-05-13 01:48:38|INFO|Save best model. 前100幕的平均reward为270.06.
+ 2022-05-13 01:48:44|INFO|episode:815/1000|steps: 211|ep_reward:281.56
+ 2022-05-13 01:48:44|INFO|Save best model. 前100幕的平均reward为270.07.
+ 2022-05-13 01:48:52|INFO|episode:816/1000|steps: 243|ep_reward:273.11
+ 2022-05-13 01:48:52|INFO|Save best model. 前100幕的平均reward为270.13.
+ 2022-05-13 01:48:59|INFO|episode:817/1000|steps: 234|ep_reward:283.48
+ 2022-05-13 01:48:59|INFO|Save best model. 前100幕的平均reward为270.44.
+ 2022-05-13 01:49:06|INFO|episode:818/1000|steps: 243|ep_reward:281.39
+ 2022-05-13 01:49:14|INFO|episode:819/1000|steps: 257|ep_reward:308.19
+ 2022-05-13 01:49:21|INFO|episode:820/1000|steps: 239|ep_reward:269.46
+ 2022-05-13 01:49:27|INFO|episode:821/1000|steps: 201|ep_reward:267.29
+ 2022-05-13 01:49:35|INFO|episode:822/1000|steps: 233|ep_reward:273.37
+ 2022-05-13 01:49:43|INFO|episode:823/1000|steps: 262|ep_reward:276.22
+ 2022-05-13 01:49:52|INFO|episode:824/1000|steps: 277|ep_reward:283.16
+ 2022-05-13 01:49:57|INFO|episode:825/1000|steps: 181|ep_reward:290.73
+ 2022-05-13 01:49:57|INFO|Save best model. 前100幕的平均reward为270.61.
+ 2022-05-13 01:50:03|INFO|episode:826/1000|steps: 203|ep_reward:253.15
+ 2022-05-13 01:50:09|INFO|episode:827/1000|steps: 175|ep_reward:257.1
+ 2022-05-13 01:50:17|INFO|episode:828/1000|steps: 256|ep_reward:293.97
+ 2022-05-13 01:50:24|INFO|episode:829/1000|steps: 235|ep_reward:274.9
+ 2022-05-13 01:50:33|INFO|episode:830/1000|steps: 288|ep_reward:293.98
+ 2022-05-13 01:50:42|INFO|episode:831/1000|steps: 277|ep_reward:241.62
+ 2022-05-13 01:50:49|INFO|episode:832/1000|steps: 231|ep_reward:278.26
+ 2022-05-13 01:50:55|INFO|episode:833/1000|steps: 194|ep_reward:260.74
+ 2022-05-13 01:50:59|INFO|episode:834/1000|steps: 136|ep_reward:56.24
+ 2022-05-13 01:51:07|INFO|episode:835/1000|steps: 260|ep_reward:301.78
+ 2022-05-13 01:51:14|INFO|episode:836/1000|steps: 246|ep_reward:306.67
+ 2022-05-13 01:51:25|INFO|episode:837/1000|steps: 324|ep_reward:297.97
+ 2022-05-13 01:51:32|INFO|episode:838/1000|steps: 229|ep_reward:290.83
+ 2022-05-13 01:51:39|INFO|episode:839/1000|steps: 232|ep_reward:257.93
+ 2022-05-13 01:51:45|INFO|episode:840/1000|steps: 211|ep_reward:293.37
+ 2022-05-13 01:51:54|INFO|episode:841/1000|steps: 278|ep_reward:258.09
+ 2022-05-13 01:52:02|INFO|episode:842/1000|steps: 273|ep_reward:268.81
+ 2022-05-13 01:52:09|INFO|episode:843/1000|steps: 247|ep_reward:278.83
+ 2022-05-13 01:52:16|INFO|episode:844/1000|steps: 227|ep_reward:256.96
+ 2022-05-13 01:52:25|INFO|episode:845/1000|steps: 273|ep_reward:293.09
+ 2022-05-13 01:52:32|INFO|episode:846/1000|steps: 243|ep_reward:297.55
+ 2022-05-13 01:52:39|INFO|episode:847/1000|steps: 230|ep_reward:299.85
+ 2022-05-13 01:52:44|INFO|episode:848/1000|steps: 148|ep_reward:87.38
+ 2022-05-13 01:52:50|INFO|episode:849/1000|steps: 198|ep_reward:286.88
+ 2022-05-13 01:52:57|INFO|episode:850/1000|steps: 247|ep_reward:256.14
+ 2022-05-13 01:53:01|INFO|episode:851/1000|steps: 116|ep_reward:-25.33
+ 2022-05-13 01:53:07|INFO|episode:852/1000|steps: 211|ep_reward:256.94
+ 2022-05-13 01:53:14|INFO|episode:853/1000|steps: 236|ep_reward:247.59
+ 2022-05-13 01:53:21|INFO|episode:854/1000|steps: 219|ep_reward:284.53
+ 2022-05-13 01:53:27|INFO|episode:855/1000|steps: 198|ep_reward:263.17
+ 2022-05-13 01:53:34|INFO|episode:856/1000|steps: 238|ep_reward:272.11
+ 2022-05-13 01:53:41|INFO|episode:857/1000|steps: 218|ep_reward:267.43
+ 2022-05-13 01:53:51|INFO|episode:858/1000|steps: 320|ep_reward:273.54
+ 2022-05-13 01:53:58|INFO|episode:859/1000|steps: 248|ep_reward:267.86
+ 2022-05-13 01:54:07|INFO|episode:860/1000|steps: 272|ep_reward:292.74
+ 2022-05-13 01:54:14|INFO|episode:861/1000|steps: 249|ep_reward:246.25
+ 2022-05-13 01:54:22|INFO|episode:862/1000|steps: 240|ep_reward:282.58
+ 2022-05-13 01:54:30|INFO|episode:863/1000|steps: 266|ep_reward:244.63
+ 2022-05-13 01:54:39|INFO|episode:864/1000|steps: 308|ep_reward:274.76
+ 2022-05-13 01:54:49|INFO|episode:865/1000|steps: 326|ep_reward:258.56
+ 2022-05-13 01:54:59|INFO|episode:866/1000|steps: 311|ep_reward:268.73
+ 2022-05-13 01:55:06|INFO|episode:867/1000|steps: 232|ep_reward:279.27
+ 2022-05-13 01:55:13|INFO|episode:868/1000|steps: 246|ep_reward:267.93
+ 2022-05-13 01:55:43|INFO|episode:869/1000|steps: 870|ep_reward:143.69
+ 2022-05-13 01:55:51|INFO|episode:870/1000|steps: 257|ep_reward:270.31
+ 2022-05-13 01:56:02|INFO|episode:871/1000|steps: 378|ep_reward:302.04
+ 2022-05-13 01:56:10|INFO|episode:872/1000|steps: 266|ep_reward:286.34
+ 2022-05-13 01:56:18|INFO|episode:873/1000|steps: 269|ep_reward:293.9
+ 2022-05-13 01:56:26|INFO|episode:874/1000|steps: 253|ep_reward:272.78
+ 2022-05-13 01:56:33|INFO|episode:875/1000|steps: 251|ep_reward:270.91
+ 2022-05-13 01:56:36|INFO|episode:876/1000|steps: 119|ep_reward:82.24
+ 2022-05-13 01:56:42|INFO|episode:877/1000|steps: 218|ep_reward:285.82
+ 2022-05-13 01:56:49|INFO|episode:878/1000|steps: 230|ep_reward:266.36
+ 2022-05-13 01:56:57|INFO|episode:879/1000|steps: 294|ep_reward:286.52
+ 2022-05-13 01:57:05|INFO|episode:880/1000|steps: 278|ep_reward:275.74
+ 2022-05-13 01:57:11|INFO|episode:881/1000|steps: 228|ep_reward:284.25
+ 2022-05-13 01:57:18|INFO|episode:882/1000|steps: 246|ep_reward:293.24
+ 2022-05-13 01:57:25|INFO|episode:883/1000|steps: 231|ep_reward:291.89
+ 2022-05-13 01:57:29|INFO|episode:884/1000|steps: 133|ep_reward:7.69
+ 2022-05-13 01:57:34|INFO|episode:885/1000|steps: 199|ep_reward:289.63
+ 2022-05-13 01:57:40|INFO|episode:886/1000|steps: 206|ep_reward:306.7
+ 2022-05-13 01:57:47|INFO|episode:887/1000|steps: 239|ep_reward:259.3
+ 2022-05-13 01:57:57|INFO|episode:888/1000|steps: 302|ep_reward:263.49
+ 2022-05-13 01:58:04|INFO|episode:889/1000|steps: 240|ep_reward:287.15
+ 2022-05-13 01:58:13|INFO|episode:890/1000|steps: 284|ep_reward:273.53
+ 2022-05-13 01:58:19|INFO|episode:891/1000|steps: 216|ep_reward:252.78
+ 2022-05-13 01:58:26|INFO|episode:892/1000|steps: 231|ep_reward:265.42
+ 2022-05-13 01:58:33|INFO|episode:893/1000|steps: 257|ep_reward:285.97
+ 2022-05-13 01:58:40|INFO|episode:894/1000|steps: 232|ep_reward:304.38
+ 2022-05-13 01:58:48|INFO|episode:895/1000|steps: 241|ep_reward:252.94
+ 2022-05-13 01:58:54|INFO|episode:896/1000|steps: 207|ep_reward:238.87
+ 2022-05-13 01:59:05|INFO|episode:897/1000|steps: 375|ep_reward:275.39
+ 2022-05-13 01:59:13|INFO|episode:898/1000|steps: 235|ep_reward:275.51
+ 2022-05-13 01:59:19|INFO|episode:899/1000|steps: 202|ep_reward:267.99
+ 2022-05-13 01:59:26|INFO|episode:900/1000|steps: 244|ep_reward:287.86
+ 2022-05-13 01:59:36|INFO|episode:901/1000|steps: 306|ep_reward:280.75
+ 2022-05-13 01:59:42|INFO|episode:902/1000|steps: 217|ep_reward:250.41
+ 2022-05-13 01:59:50|INFO|episode:903/1000|steps: 246|ep_reward:287.82
+ 2022-05-13 01:59:56|INFO|episode:904/1000|steps: 211|ep_reward:296.79
+ 2022-05-13 02:00:03|INFO|episode:905/1000|steps: 226|ep_reward:278.03
+ 2022-05-13 02:00:11|INFO|episode:906/1000|steps: 264|ep_reward:281.92
+ 2022-05-13 02:00:18|INFO|episode:907/1000|steps: 205|ep_reward:305.37
+ 2022-05-13 02:00:23|INFO|episode:908/1000|steps: 181|ep_reward:287.7
+ 2022-05-13 02:00:31|INFO|episode:909/1000|steps: 248|ep_reward:287.83
+ 2022-05-13 02:00:38|INFO|episode:910/1000|steps: 233|ep_reward:254.58
+ 2022-05-13 02:00:45|INFO|episode:911/1000|steps: 218|ep_reward:296.33
+ 2022-05-13 02:00:51|INFO|episode:912/1000|steps: 199|ep_reward:252.56
+ 2022-05-13 02:00:57|INFO|episode:913/1000|steps: 215|ep_reward:274.65
+ 2022-05-13 02:01:05|INFO|episode:914/1000|steps: 238|ep_reward:315.86
+ 2022-05-13 02:01:11|INFO|episode:915/1000|steps: 216|ep_reward:285.72
+ 2022-05-13 02:01:17|INFO|episode:916/1000|steps: 203|ep_reward:268.3
+ 2022-05-13 02:01:25|INFO|episode:917/1000|steps: 245|ep_reward:262.62
+ 2022-05-13 02:01:32|INFO|episode:918/1000|steps: 231|ep_reward:285.68
+ 2022-05-13 02:01:38|INFO|episode:919/1000|steps: 201|ep_reward:309.83
+ 2022-05-13 02:01:45|INFO|episode:920/1000|steps: 217|ep_reward:307.93
+ 2022-05-13 02:01:51|INFO|episode:921/1000|steps: 216|ep_reward:311.94
+ 2022-05-13 02:02:00|INFO|episode:922/1000|steps: 274|ep_reward:283.6
+ 2022-05-13 02:02:06|INFO|episode:923/1000|steps: 212|ep_reward:282.53
+ 2022-05-13 02:02:13|INFO|episode:924/1000|steps: 223|ep_reward:267.14
+ 2022-05-13 02:02:17|INFO|episode:925/1000|steps: 134|ep_reward:59.82
+ 2022-05-13 02:02:25|INFO|episode:926/1000|steps: 260|ep_reward:238.3
+ 2022-05-13 02:02:32|INFO|episode:927/1000|steps: 248|ep_reward:314.77
+ 2022-05-13 02:02:39|INFO|episode:928/1000|steps: 215|ep_reward:280.09
+ 2022-05-13 02:02:46|INFO|episode:929/1000|steps: 243|ep_reward:291.36
+ 2022-05-13 02:02:55|INFO|episode:930/1000|steps: 275|ep_reward:281.15
+ 2022-05-13 02:03:01|INFO|episode:931/1000|steps: 192|ep_reward:277.35
+ 2022-05-13 02:03:07|INFO|episode:932/1000|steps: 222|ep_reward:288.27
+ 2022-05-13 02:03:19|INFO|episode:933/1000|steps: 363|ep_reward:284.98
+ 2022-05-13 02:03:27|INFO|episode:934/1000|steps: 212|ep_reward:273.58
+ 2022-05-13 02:03:35|INFO|episode:935/1000|steps: 260|ep_reward:251.65
+ 2022-05-13 02:03:41|INFO|episode:936/1000|steps: 207|ep_reward:264.27
+ 2022-05-13 02:03:48|INFO|episode:937/1000|steps: 228|ep_reward:262.48
+ 2022-05-13 02:03:54|INFO|episode:938/1000|steps: 187|ep_reward:259.85
+ 2022-05-13 02:04:00|INFO|episode:939/1000|steps: 216|ep_reward:258.7
+ 2022-05-13 02:04:06|INFO|episode:940/1000|steps: 182|ep_reward:280.93
+ 2022-05-13 02:04:12|INFO|episode:941/1000|steps: 214|ep_reward:283.11
+ 2022-05-13 02:04:19|INFO|episode:942/1000|steps: 225|ep_reward:307.15
+ 2022-05-13 02:04:26|INFO|episode:943/1000|steps: 209|ep_reward:279.56
+ 2022-05-13 02:04:32|INFO|episode:944/1000|steps: 193|ep_reward:280.18
+ 2022-05-13 02:04:38|INFO|episode:945/1000|steps: 222|ep_reward:281.0
+ 2022-05-13 02:04:44|INFO|episode:946/1000|steps: 201|ep_reward:280.6
+ 2022-05-13 02:04:51|INFO|episode:947/1000|steps: 210|ep_reward:273.05
+ 2022-05-13 02:04:57|INFO|episode:948/1000|steps: 198|ep_reward:264.15
+ 2022-05-13 02:05:03|INFO|episode:949/1000|steps: 187|ep_reward:265.71
+ 2022-05-13 02:05:10|INFO|episode:950/1000|steps: 222|ep_reward:299.47
+ 2022-05-13 02:05:17|INFO|episode:951/1000|steps: 221|ep_reward:283.84
+ 2022-05-13 02:05:27|INFO|episode:952/1000|steps: 265|ep_reward:258.93
+ 2022-05-13 02:05:38|INFO|episode:953/1000|steps: 333|ep_reward:269.4
+ 2022-05-13 02:05:48|INFO|episode:954/1000|steps: 302|ep_reward:225.77
+ 2022-05-13 02:05:56|INFO|episode:955/1000|steps: 212|ep_reward:298.58
+ 2022-05-13 02:06:04|INFO|episode:956/1000|steps: 241|ep_reward:309.07
+ 2022-05-13 02:06:10|INFO|episode:957/1000|steps: 195|ep_reward:257.53
+ 2022-05-13 02:06:17|INFO|episode:958/1000|steps: 183|ep_reward:297.28
+ 2022-05-13 02:06:23|INFO|episode:959/1000|steps: 189|ep_reward:289.25
+ 2022-05-13 02:06:31|INFO|episode:960/1000|steps: 245|ep_reward:287.35
+ 2022-05-13 02:06:38|INFO|episode:961/1000|steps: 225|ep_reward:299.01
+ 2022-05-13 02:06:44|INFO|episode:962/1000|steps: 209|ep_reward:254.85
+ 2022-05-13 02:06:52|INFO|episode:963/1000|steps: 271|ep_reward:276.73
+ 2022-05-13 02:07:01|INFO|episode:964/1000|steps: 296|ep_reward:267.85
+ 2022-05-13 02:07:09|INFO|episode:965/1000|steps: 240|ep_reward:318.37
+ 2022-05-13 02:07:09|INFO|Save best model. 前100幕的平均reward为271.08.
+ 2022-05-13 02:07:22|INFO|episode:966/1000|steps: 431|ep_reward:260.73
+ 2022-05-13 02:07:34|INFO|episode:967/1000|steps: 378|ep_reward:280.21
+ 2022-05-13 02:07:40|INFO|episode:968/1000|steps: 201|ep_reward:278.29
+ 2022-05-13 02:07:40|INFO|Save best model. 前100幕的平均reward为271.11.
+ 2022-05-13 02:07:53|INFO|episode:969/1000|steps: 407|ep_reward:265.09
+ 2022-05-13 02:07:53|INFO|Save best model. 前100幕的平均reward为272.33.
+ 2022-05-13 02:08:00|INFO|episode:970/1000|steps: 244|ep_reward:277.28
+ 2022-05-13 02:08:00|INFO|Save best model. 前100幕的平均reward为272.39.
+ 2022-05-13 02:08:08|INFO|episode:971/1000|steps: 258|ep_reward:283.11
+ 2022-05-13 02:08:15|INFO|episode:972/1000|steps: 223|ep_reward:269.67
+ 2022-05-13 02:08:34|INFO|episode:973/1000|steps: 604|ep_reward:262.67
+ 2022-05-13 02:08:42|INFO|episode:974/1000|steps: 264|ep_reward:260.25
+ 2022-05-13 02:08:51|INFO|episode:975/1000|steps: 295|ep_reward:229.95
+ 2022-05-13 02:08:58|INFO|episode:976/1000|steps: 215|ep_reward:300.1
+ 2022-05-13 02:08:58|INFO|Save best model. 前100幕的平均reward为273.37.
+ 2022-05-13 02:09:04|INFO|episode:977/1000|steps: 203|ep_reward:257.65
+ 2022-05-13 02:09:11|INFO|episode:978/1000|steps: 232|ep_reward:273.02
+ 2022-05-13 02:09:18|INFO|episode:979/1000|steps: 228|ep_reward:269.62
+ 2022-05-13 02:09:25|INFO|episode:980/1000|steps: 240|ep_reward:257.42
+ 2022-05-13 02:09:33|INFO|episode:981/1000|steps: 270|ep_reward:277.95
+ 2022-05-13 02:09:36|INFO|episode:982/1000|steps:  87|ep_reward:-189.26
+ 2022-05-13 02:09:43|INFO|episode:983/1000|steps: 233|ep_reward:251.68
+ 2022-05-13 02:09:51|INFO|episode:984/1000|steps: 259|ep_reward:259.21
+ 2022-05-13 02:10:04|INFO|episode:985/1000|steps: 403|ep_reward:258.52
+ 2022-05-13 02:10:11|INFO|episode:986/1000|steps: 238|ep_reward:304.22
+ 2022-05-13 02:10:19|INFO|episode:987/1000|steps: 273|ep_reward:301.65
+ 2022-05-13 02:10:26|INFO|episode:988/1000|steps: 207|ep_reward:312.27
+ 2022-05-13 02:10:36|INFO|episode:989/1000|steps: 352|ep_reward:301.14
+ 2022-05-13 02:10:45|INFO|episode:990/1000|steps: 265|ep_reward:268.27
+ 2022-05-13 02:10:54|INFO|episode:991/1000|steps: 310|ep_reward:259.59
+ 2022-05-13 02:11:02|INFO|episode:992/1000|steps: 253|ep_reward:287.3
+ 2022-05-13 02:11:09|INFO|episode:993/1000|steps: 240|ep_reward:247.77
+ 2022-05-13 02:11:17|INFO|episode:994/1000|steps: 242|ep_reward:274.86
+ 2022-05-13 02:11:32|INFO|episode:995/1000|steps: 491|ep_reward:259.95
+ 2022-05-13 02:11:41|INFO|episode:996/1000|steps: 271|ep_reward:264.39
+ 2022-05-13 02:11:48|INFO|episode:997/1000|steps: 234|ep_reward:285.49
+ 2022-05-13 02:11:57|INFO|episode:998/1000|steps: 284|ep_reward:277.64
+ 2022-05-13 02:12:03|INFO|episode:999/1000|steps: 214|ep_reward:265.37
+ 2022-05-13 02:12:09|INFO|episode:1000/1000|steps: 196|ep_reward:257.56
+ 2022-05-13 02:12:09|INFO|Save last model.
+ 2022-05-13 02:12:09|INFO|Complete training.
+ 2022-05-13 02:12:09|INFO|===========================================

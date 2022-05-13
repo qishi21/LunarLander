@@ -1,5 +1,4 @@
 import torch
-torch.cuda.set_device(1)
 if torch.cuda.is_available():
     torch.cuda.set_device(1)
 import logging
@@ -9,10 +8,11 @@ import numpy as np
 from torch.utils.tensorboard import SummaryWriter
 from model.agent import DDPGAgent
 
-TRAIN_CHECKPOINT = True  # 是否进行训练
-LOAD_MODEL_CHECKPOINT = False  # 是否载入模型
+TRAIN_CHECKPOINT = False  # 是否进行训练
+LOAD_MODEL_CHECKPOINT = True  # 是否载入模型
 RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
-
+LOGGER_CHECKPOINT = False  # 是否将运行log写入文件
+TENSORBOARD_CHECKPOINT = False  # 是否开启tensorboard
 
 # 参数配置
 class DDPGConfig:
@@ -20,18 +20,16 @@ class DDPGConfig:
         self.env_name = 'LunarLanderContinuous-v2'  # 环境名称
         self.algo = 'DDPG'  # 算法名称
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  # 设备
-        self.algo = 'DDPG'  # 算法名称
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')  # 设备
 
         self.alpha = 1e-4  # actor_network学习率
         self.beta = 1e-3  # critic_network学习率
         self.gamma = 0.99  # 折扣系数
-        self.tau = 5e-3  # 软更新系数 5e-3
+        self.tau = 0.05  # 软更新系数 5e-3
         self.batch_size = 64  # 每次从经验回放池中抽取的样本数量
         self.capacity = 1e6  # 经验回放池的容量
 
-        self.fc1_dim = 400  # 隐藏层1的维度
-        self.fc2_dim = 300  # 隐藏层2的维度
+        self.fc1_dim = 300  # 隐藏层1的维度
+        self.fc2_dim = 200  # 隐藏层2的维度
 
         self.train_eps = 1000  # 训练的幕数
         self.eval_eps = 30  # 评估的幕数
@@ -40,18 +38,20 @@ class DDPGConfig:
         self.max_reward = 0
 
         # tensorboard
-        self.writer = SummaryWriter()
+        if TENSORBOARD_CHECKPOINT:
+            self.writer = SummaryWriter()
 
         # logger
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
-        self.console_handler = logging.StreamHandler()
-        self.file_handler = logging.FileHandler(filename=f'{self.env_name}.log')
         self.formatter = logging.Formatter('%(asctime)20s|%(levelname)s|%(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        self.console_handler = logging.StreamHandler()
         self.console_handler.setFormatter(self.formatter)
-        self.file_handler.setFormatter(self.formatter)
         self.logger.addHandler(self.console_handler)
-        self.logger.addHandler(self.file_handler)
+        if LOGGER_CHECKPOINT:
+            self.file_handler = logging.FileHandler(filename=f'{self.env_name}_temp.log')
+            self.file_handler.setFormatter(self.formatter)
+            self.logger.addHandler(self.file_handler)
 
 
 # 配置环境和agent
@@ -70,7 +70,7 @@ def env_agent_config(cfg):
 # 训练
 def train(cfg, env, agent):
     cfg.logger.info('Start training.')
-    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}')
+    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}, device:{cfg.device}')
     history_reward = []
 
     for ep in range(cfg.train_eps):
@@ -82,16 +82,17 @@ def train(cfg, env, agent):
             action = agent.choose_action(state)
             steps += 1
             next_state, reward, done, _ = env.step(action)
-            shaping_reward = reward - abs(next_state[0]) * 10
-            if next_state[6] and next_state[7]:
-                shaping_reward += 20
+            shaping_reward = reward - abs(next_state[0])*10
+            if done:
+                shaping_reward += (state[6]+state[7])*10
             agent.push(state, action, shaping_reward, next_state, done)
             agent.learn()
             ep_reward += reward
             state = next_state
 
-        cfg.writer.add_scalar('train/loss', ep_reward, ep)
-        cfg.writer.add_scalar('train/steps', steps, ep)
+        if TENSORBOARD_CHECKPOINT:
+            cfg.writer.add_scalar('train/reward', ep_reward, ep)
+            cfg.writer.add_scalar('train/steps', steps, ep)
         cfg.logger.info(f'episode:{ep+1:>3}/{cfg.train_eps}|steps:{steps:>4}|ep_reward:{round(ep_reward, 2)}')
         history_reward.append(ep_reward)
         mean_reward = np.mean(history_reward[-100:])
@@ -112,7 +113,7 @@ def train(cfg, env, agent):
 # 评估
 def eval(cfg, env, agent):
     cfg.logger.info('Start evaluation.')
-    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}')
+    cfg.logger.info(f'env:{cfg.env_name}, algo:{cfg.algo}, device:{cfg.device}')
 
     history_reward = []
     for ep in range(cfg.eval_eps):
@@ -133,8 +134,9 @@ def eval(cfg, env, agent):
             ep_reward += reward
             state = next_state
         history_reward.append(ep_reward)
-        cfg.writer.add_scalar('eval/reward', ep_reward, ep)
-        cfg.writer.add_scalar('eval/steps', steps, ep)
+        if TENSORBOARD_CHECKPOINT:
+            cfg.writer.add_scalar('eval/reward', ep_reward, ep)
+            cfg.writer.add_scalar('eval/steps', steps, ep)
         cfg.logger.info(f'episode:{ep+1:>3}/{cfg.eval_eps}|steps:{steps:>4}|ep_reward:{round(ep_reward, 2)}')
 
     cfg.logger.info(f'共计{cfg.eval_eps}幕，平均reward为{np.round(np.mean(history_reward), 2)}.')
@@ -154,8 +156,10 @@ if __name__ == '__main__':
             cfg.logger.info('KeyboardInterrupt.')
             cfg.logger.info('Save last model.')
             cfg.logger.info('='*43)
-            cfg.writer.close()
+            if TENSORBOARD_CHECKPOINT:
+                cfg.writer.close()
     else:
         eval(cfg, env, agent)
 
-    cfg.writer.close()
+    if TENSORBOARD_CHECKPOINT:
+        cfg.writer.close()

@@ -27,27 +27,31 @@ class DDPGAgent:
         self.critic_optimizer = torch.optim.Adam(self.critic.parameters(), lr=cfg.beta, weight_decay=0.01)
         self.critic_target = CriticNetwork(state_dim, action_dim, cfg.fc1_dim, cfg.fc2_dim)
 
-        # 软更新
+        self.actor.to(self.device)
+        self.actor_target.to(self.device)
+        self.critic.to(self.device)
+        self.critic_target.to(self.device)
+
         self.update_network_parameters(tau=1)
 
     # 选择动作，用于训练
     def choose_action(self, state):
         self.actor.eval()
 
-        state = torch.tensor(np.array([state]), dtype=torch.float)
+        state = torch.tensor(np.array([state]), dtype=torch.float, device=self.device)
         mu = self.actor(state)
-        mu_prime = mu + torch.tensor(self.noise(), dtype=torch.float)
+        mu_prime = mu + torch.tensor(self.noise(), dtype=torch.float, device=self.device)
 
         self.actor.train()
-        return mu_prime.detach().numpy()[0]
+        return mu_prime.cpu().detach().numpy()[0]
 
     # 预测动作，用于评估
     def predict(self, state):
         self.actor.eval()
-        state = torch.tensor(np.array([state]), dtype=torch.float)
+        state = torch.tensor(np.array([state]), dtype=torch.float, device=self.device)
         mu = self.actor(state)
         self.actor.train()
-        return mu.detach().numpy()[0]
+        return mu.cpu().detach().numpy()[0]
 
     # 往经验池添加数据
     def push(self, state, action, reward, next_state, done):
@@ -60,10 +64,10 @@ class DDPGAgent:
 
         states, actions, rewards, next_states, dones = self.memory.sample(self.batch_size)
 
-        states = torch.tensor(states, dtype=torch.float)
-        actions = torch.tensor(actions, dtype=torch.float)
-        rewards = torch.tensor(rewards, dtype=torch.float)
-        next_states = torch.tensor(next_states, dtype=torch.float)
+        states = torch.tensor(states, dtype=torch.float, device=self.device)
+        actions = torch.tensor(actions, dtype=torch.float, device=self.device)
+        rewards = torch.tensor(rewards, dtype=torch.float, device=self.device)
+        next_states = torch.tensor(next_states, dtype=torch.float, device=self.device)
         dones = torch.tensor(dones)
 
         actions_target = self.actor_target(next_states)
@@ -100,13 +104,13 @@ class DDPGAgent:
         critic_target_params_dict = OrderedDict(self.critic_target.named_parameters())
 
         for name in critic_params_dict:
-            critic_params_dict[name] = tau*critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
+            critic_target_params_dict[name] = tau*critic_params_dict[name].clone() + (1-tau)*critic_target_params_dict[name].clone()
 
         for name in actor_params_dict:
-            actor_params_dict[name] = tau * actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
+            actor_target_params_dict[name] = tau*actor_params_dict[name].clone() + (1-tau)*actor_target_params_dict[name].clone()
 
-        self.critic_target.load_state_dict(critic_params_dict)
-        self.actor_target.load_state_dict(actor_params_dict)
+        self.critic_target.load_state_dict(critic_target_params_dict)
+        self.actor_target.load_state_dict(actor_target_params_dict)
 
     # 保存模型
     def save_models(self, model_dir='./params/last_model'):
