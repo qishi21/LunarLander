@@ -10,11 +10,6 @@ import numpy as np
 class ActorNetwork(nn.Module):
     def __init__(self, state_dim, action_dim, fc1_dim, fc2_dim):
         super(ActorNetwork, self).__init__()
-        self.state_dim = state_dim
-        self.fc1_dim = fc1_dim
-        self.fc2_dim = fc2_dim
-        self.action_dim = action_dim
-
         self.fc1 = nn.Linear(state_dim, fc1_dim)
         self.fc2 = nn.Linear(fc1_dim, fc2_dim)
 
@@ -62,11 +57,6 @@ class ActorNetwork(nn.Module):
 class CriticNetwork(nn.Module):
     def __init__(self, state_dim, action_dim, fc1_dim, fc2_dim):
         super(CriticNetwork, self).__init__()
-        self.state_dim = state_dim
-        self.fc1_dim = fc1_dim
-        self.fc2_dim = fc2_dim
-        self.action_dim = action_dim
-
         self.fc1 = nn.Linear(state_dim, fc1_dim)
         self.fc2 = nn.Linear(fc1_dim, fc2_dim)
 
@@ -75,7 +65,7 @@ class CriticNetwork(nn.Module):
 
         self.action_value = nn.Linear(action_dim, fc2_dim)
 
-        self.q = nn.Linear(self.fc2_dim, 1)
+        self.q = nn.Linear(fc2_dim, 1)
 
         # 初始化参数
         f1 = 1. / np.sqrt(self.fc1.weight.data.size()[0])

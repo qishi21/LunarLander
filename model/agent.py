@@ -68,7 +68,7 @@ class DDPGAgent:
         actions = torch.tensor(actions, dtype=torch.float, device=self.device)
         rewards = torch.tensor(rewards, dtype=torch.float, device=self.device)
         next_states = torch.tensor(next_states, dtype=torch.float, device=self.device)
-        dones = torch.tensor(dones)
+        dones = torch.tensor(dones, dtype=torch.float, device=self.device)
 
         actions_target = self.actor_target(next_states)
         next_state_critic_value = self.critic_target(next_states, actions_target)
