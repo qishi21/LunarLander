@@ -11,7 +11,7 @@ Algorithm: DDPG
 
 ### Pseudocode
 
-<img src="/Users/shiqi/Documents/Projects/RL/LunarLander/.images//image-20220606094920900.png" alt="image-20220606094920900" style="zoom:33%;" />
+<img src="https://github.com/qishi21/LunarLander/blob/main/.images/image-20220606094920900.png?raw=true" alt="image-20220606094920900" style="zoom:33%;" />
 
 
 
