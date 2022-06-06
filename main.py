@@ -1,6 +1,4 @@
 import torch
-if torch.cuda.is_available():
-    torch.cuda.set_device(1)
 import logging
 import os
 import gym
@@ -10,9 +8,9 @@ from model.agent import DDPGAgent
 
 TRAIN_CHECKPOINT = False  # 是否进行训练
 LOAD_MODEL_CHECKPOINT = True  # 是否载入模型
-RENDER_CHECKPOINT = False  # 是否显示动画（仅在评估时有效）
+RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
 LOGGER_CHECKPOINT = False  # 是否将运行log写入文件
-TENSORBOARD_CHECKPOINT = True  # 是否开启tensorboard
+TENSORBOARD_CHECKPOINT = False  # 是否开启tensorboard
 
 # 参数配置
 class DDPGConfig:
@@ -32,7 +30,7 @@ class DDPGConfig:
         self.fc2_dim = 200  # 隐藏层2的维度
 
         self.train_eps = 1000  # 训练的幕数
-        self.eval_eps = 1000  # 评估的幕数
+        self.eval_eps = 20  # 评估的幕数
 
         # 记录最大的奖励值，便于保存最优的模型
         self.max_reward = 0
