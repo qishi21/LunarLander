@@ -17,13 +17,13 @@ Algorithm: DDPG
 
 ###  Update Process
 
-<img src="/Users/shiqi/Documents/Projects/RL/LunarLander/.images/update.png" alt="update" style="zoom:25%;" />
+<img src="https://github.com/qishi21/LunarLander/blob/main/.images/update.png?raw=true" alt="update" style="zoom:25%;" />
 
 
 
 ### Network Structure
 
-<img src="/Users/shiqi/Documents/Projects/RL/LunarLander/.images/network.jpg" alt="network" style="zoom: 33%;" />
+<img src="https://github.com/qishi21/LunarLander/blob/main/.images/network.jpg?raw=trueg" alt="network" style="zoom: 33%;" />
 
 
 
@@ -31,10 +31,10 @@ Algorithm: DDPG
 
 ### Train Reward
 
-<img src="/Users/shiqi/Documents/Projects/RL/LunarLander/.images/train_reward-4480093.jpg" alt="train_reward" style="zoom: 23.5%;" />
+<img src="https://github.com/qishi21/LunarLander/blob/main/.images/train_reward.jpg?raw=true" alt="train_reward" style="zoom: 23.5%;" />
 
 
 
 ### Test Reward
 
-<img src="/Users/shiqi/Documents/Projects/RL/LunarLander/.images/test_reward.jpg" alt="train_reward" style="zoom: 33%;" />
+<img src="https://github.com/qishi21/LunarLander/blob/main/.images/test_reward.jpg?raw=true" style="zoom: 33%;" />
