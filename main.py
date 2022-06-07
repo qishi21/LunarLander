@@ -12,6 +12,7 @@ RENDER_CHECKPOINT = True  # 是否显示动画（仅在评估时有效）
 LOGGER_CHECKPOINT = False  # 是否将运行log写入文件
 TENSORBOARD_CHECKPOINT = False  # 是否开启tensorboard
 
+
 # 参数配置
 class DDPGConfig:
     def __init__(self):
