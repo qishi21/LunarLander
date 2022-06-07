@@ -27,6 +27,6 @@ Algorithm: DDPG
 
 <img src="https://raw.githubusercontent.com/qishi21/LunarLander/main/.images/train_reward.jpg" width='500px'>
 
-### Test Reward
+### Eval Reward
 
 <img src="https://raw.githubusercontent.com/qishi21/LunarLander/main/.images/test_reward.jpg" width='500px'>
