@@ -1,7 +1,9 @@
 # LunarLander
 
-Environment: Gym/LunarLanderContinuous-v2\
-Algorithm: DDPG
+<img src=".images/video.gif" width='500px'>
+
+**Environment**: Gym/LunarLanderContinuous-v2\
+**Algorithm**: DDPG
 
 `python main.py`
 
@@ -30,3 +32,6 @@ Algorithm: DDPG
 ### Eval Reward
 
 <img src="https://raw.githubusercontent.com/qishi21/LunarLander/main/.images/test_reward.jpg" width='500px'>
+
+## Reference
+https://github.com/shnippi/GYM
